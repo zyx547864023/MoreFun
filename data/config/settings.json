@@ -1,0 +1,18 @@
+{
+	"plugins":{
+		"RealCombatEveryFrameCombatPlugin":"real_combat.combat.RealCombatEveryFrameCombatPlugin",
+		"RC_ComboEveryFrameCombatPlugin":"real_combat.combat.RC_ComboEveryFrameCombatPlugin",
+		"RC_WeaponsEveryFrameCombatPlugin":"real_combat.combat.RC_WeaponsEveryFrameCombatPlugin",
+		"RC_MonsterBallEveryFrameCombatPlugin":"real_combat.combat.RC_MonsterBallEveryFrameCombatPlugin",
+		"RC_QEEveryFrameCombatPlugin":"real_combat.combat.RC_QEEveryFrameCombatPlugin",
+	},
+	"graphics":
+	{
+	   "trans_am":{
+		    "trans_am":"graphics/ships/hyperion/trans_am.png",
+		},		
+		"beamfringec":{
+			"beamfringec":"graphics/fx/beamfringec.png",
+		},
+	}
+}

@@ -1,0 +1,93 @@
+{
+  "hullName": "Salvage Rig",
+  "hullId": "RC_crig",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/salvage_rig.png",
+  "style": "MIDLINE",
+  "height": 182,
+  "width": 104,
+  "center": [56, 83],
+  "collisionRadius": 120,
+  "shieldCenter": [1, 1],
+  "shieldRadius": 120,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "repair_gantry"
+  ],
+  "builtInWings": [
+    "RC_borer_wing",
+    "RC_borer_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 200,
+      "locations": [-71, -22]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-81, 12],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81, 22],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81, -3],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-81, -13],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    97, 23,
+    64, 33,
+    59, 52,
+    53, 20,
+    -5, 17,
+    -41, 48,
+    -54, 30,
+    -76, 30,
+    -77, -17,
+    -69, -37,
+    -56, -38,
+    -55, -21,
+    -44, -21,
+    -48, -41,
+    -8, -27,
+    -3, -15,
+    24, -16,
+    54, -23,
+    61, -38,
+    64, -17,
+    78, -19,
+    74, -6,
+    97, 0,
+    71, 9
+  ]
+}

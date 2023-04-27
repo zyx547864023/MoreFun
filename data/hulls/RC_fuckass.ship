@@ -1,0 +1,125 @@
+{
+  "hullName": "撅腚",
+  "hullId": "RC_fuckass",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/RC/00007-1.png",
+  "style": "LOW_TECH",
+  "height": 357,
+  "width": 200,
+  "center": [100, 172.5],
+  "collisionRadius": 200,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 194.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ground_support"
+  ],
+  "builtInWeapons": {
+    "WS0001": "monster_ball_shooter_big",
+    "WS0002": "monster_ball_shooter_big",
+    "WS0003": "monster_ball_shooter_big",
+    "WS0004": "monster_ball_shooter_big"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 31,
+      "locations": [83.5, 25]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -31,
+      "locations": [83.5, -25]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -58.5,
+      "locations": [37.5, -21.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 58.5,
+      "locations": [37.5, 21.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 0,
+      "locations": [115.5, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 250,
+      "angle": 180,
+      "locations": [-3, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": 10,
+      "locations": [54.5, 68]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 90,
+      "angle": -10,
+      "locations": [54.5, -68]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-40.5, 28],
+      "length": 90.5,
+      "width": 38,
+      "angle": 180,
+      "contrailSize": 38,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-40.5, -28],
+      "length": 90.5,
+      "width": 38,
+      "angle": -180,
+      "contrailSize": 38,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    48.5, -42.5,
+    40, -98.5,
+    80, -45.5,
+    185, -0.5,
+    80, 45.5,
+    40, 98.5,
+    48.5, 42.5,
+    -166, 0.5
+  ]
+}

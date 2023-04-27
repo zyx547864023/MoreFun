@@ -1,0 +1,5 @@
+name,id,tier,tech/manufacturer,rarity,uiTags,tags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+真实战斗,real_combat_hullmod,,测试用,,特殊,"special,no_drop,no_sell,no_drop_salvage",8000,,TRUE,TRUE,0,0,0,0,real_combat.hullmods.RealCombatHullmod,根据武器规格，增加能量武器{%s}的射程，根据命中距离衰减伤害，增加实弹武器{%s/%s/%s}的射程，同时减少实弹武器{%s/%s/%s}的伤害，增加导弹{%s}的射程。,提升射程降低伤害。,graphics/hullmods/NRC.jpg
+动能导弹防御,ckem_hullmod,,普通,,"武器, 防御","defensive, merc",8000,TRUE,,,0,0,0,0,real_combat.hullmods.RC_CKEM,当舰船护盾打开时，所有PD武器优先攻击动能导弹。,当舰船护盾打开时，所有PD武器优先攻击动能导弹。,graphics/hullmods/CKEM.jpg
+模块核心,RC_TrinityForceCore,,海波龙神教,,特殊,"special,no_drop,no_sell,no_drop_salvage",,,TRUE,,0,0,0,0,real_combat.hullmods.RC_TrinityForceCore,作为模块的核心，速度和角速度与最慢的模块保持一致。,作为模块的核心，速度和角速度与最慢的模块保持一致。,graphics/hullmods/terminator_core.png
+模块组件,RC_TrinityForceModule,,海波龙神教,,特殊,"special,no_drop,no_sell,no_drop_salvage",,,TRUE,,0,0,0,0,real_combat.hullmods.RC_TrinityForceModule,作为模块的核心，速度和角速度与最慢的模块保持一致。,作为模块的核心，速度和角速度与最慢的模块保持一致。,graphics/hullmods/terminator_core.png

@@ -1,0 +1,36 @@
+{
+  "variantId": "RC_fuckass_variant",
+  "hullId": "RC_fuckass",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 7,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "extendedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vulcan",
+        "WS 002": "vulcan",
+        "WS 003": "vulcan",
+        "WS 004": "vulcan",
+        "WS 005": "ioncannon",
+        "WS 006": "ioncannon",
+        "WS0001": "monster_ball_shooter_big",
+        "WS0002": "monster_ball_shooter_big",
+        "WS0003": "monster_ball_shooter_big",
+        "WS0004": "monster_ball_shooter_big"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "talon_wing"
+  ]
+}

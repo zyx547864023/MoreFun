@@ -1,0 +1,32 @@
+{
+	"specClass":"beam",
+	"id":"phasebeam_sun",
+	"beamEffect":"real_combat.combat.RC_BeamCrossEffect",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	
+	#"turretSprite":"graphics/weapons/phase_beam_turret_sun.png",
+	#"turretGlowSprite":"graphics/weapons/phase_beam_turret_glow.png",
+	#"hardpointSprite":"graphics/weapons/phase_beam_hardpoint_sun.png",
+	#"hardpointGlowSprite":"graphics/weapons/phase_beam_hardpoint_glow.png",
+	
+	"turretSprite":"graphics/weapons/graviton_beam_turret_base_sun.png",
+	"turretGlowSprite":"graphics/weapons/graviton_beam_turret_glow.png",
+	"hardpointSprite":"graphics/weapons/graviton_beam_hardpoint_base_sun.png",
+	"hardpointGlowSprite":"graphics/weapons/graviton_beam_hardpoint_glow.png",
+	
+	"turretOffsets":[15, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[23, 0],
+	"hardpointAngleOffsets":[0],
+	"fringeColor":[232,193,41,255],
+	"coreColor":[255,255,255,255],
+	"glowColor":[243,224,148,255],
+	"width":20.0,
+	"textureType":ROUGH,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	#"fireSoundOne":"phase_beam_intro",
+	"fireSoundTwo":"phase_beam_loop",	
+}

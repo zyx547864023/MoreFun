@@ -1,0 +1,3 @@
+bar event id,tags,freq,prob,min dur,max dur,min timeout,max timeout,min accepted timeout,max accepted timeout,plugin
+RC_ChangeHyperion,,1000,1,30,40,15,20,60,90,real_combat.campaign.missions.RC_ChangeHyperion
+RC_sShip,,1000,1,30,40,15,20,60,90,real_combat.campaign.missions.FairyJump

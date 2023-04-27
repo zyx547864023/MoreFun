@@ -1,0 +1,12 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+登陆舱发射器,monster_ball_shooter,1,0.4,10000,3000,,50,,75,20,10,99,,,KINETIC,0,,0,5,1,,0,0,0,0,,700,100,10,2000,,,STRIKE,"strike14, rocket9, pirates, merc",,,,瘫痪,较快,优秀,,,装载弹药量基于舰船等级变化，分别为{%s/%s/%s/%s}，每一枚登陆舱将消耗{%s}名陆战队员，不足{%s}名时消耗殆尽，陆战队员为{%s}时，失去效果。抢夺船只成功时回收船上的陆战队员。,4 | 3 | 2 | 1 | 20 | 20 | 0,,,TRUE,14
+,monster_ball_shooter_sec,1,,100,100,,200,200,50,10,,,,,KINETIC,,,0,1,,,,,,,,300,100,99999,300,,,SYSTEM,,,,,,,,,,,,,,,
+大型登陆舱发射器,monster_ball_shooter_big,2,,40000,3000,,50,,75,20,26,99,,,KINETIC,0,,0,5,2,1,0,0,0,0,,700,100,10,2000,,,STRIKE,"strike19, rocket15, pirates, merc",,,,瘫痪,较快,优秀,,,装载弹药量基于舰船等级变化，分别为{%s/%s/%s/%s}，每一枚登陆舱将消耗{%s}名陆战队员，不足{%s}名时消耗殆尽，陆战队员为{%s}时，失去效果。抢夺船只成功时回收船上的陆战队员。,8 | 6 | 4 | 2 | 20 | 20 | 0,,,TRUE,15
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+重型感应空雷,minestrikeplus,0,,200000,1000,,300,,25,30,12,30,,,HIGH_EXPLOSIVE,0,,0,3,1,,0,0,0,0,,1000,1000,20,2000,,,SYSTEM,,,,,,,,,,,,,,,38.7
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+太阳光束,phasebeam_sun,1,,200000,600,1000,,,0,40,10,,,,ENERGY,,1200,0.25,0.5,1,4,,,,,3200,,,,,,,,"energy14, beam10",,,,通用,,,,,在与冰冻光束相交时产生间隙，相交时间越长，产生裂隙越多。每个裂隙对附近目标造 %s 至 %s 的能量伤害。,750 | 1250,,,,20
+冰冻光束,phasebeam_ice,1,,200000,600,1000,,,0,40,10,,,,ENERGY,,1200,0.25,0.5,1,4,,,,,3200,,,,,,,,"energy14, beam10",,,,通用,,,,,在与太阳光束相交时产生间隙，相交时间越长，产生裂隙越多。每个裂隙对附近目标造 %s 至 %s 的能量伤害。,750 | 1250,,,,20
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+离子炮,ioncannon_goodlook,2,,500,500,,25,400,0,40,6,,,,ENERGY,30,,0.5,0,,,,,,,,1000,,,,,,,"energy8, hightech_bp, merc",,,,瘫痪,,,,,当命中船体或装甲时，有 %s 的概率产生打击武器与引擎的电弧，造成该武器命中目标时等值的额外伤害。,25%,,,,19
+轨道炮,railgun_goodlook,2,0.5,600,700,,100,,10,30,7,,,,KINETIC,90,,0.6,0,1,,,,,,,1000,,,50,,,,"kinetic8, LR, remnant, rare_bp, hist1t, merc",,,,反护盾,,,,,,,,,,3.75

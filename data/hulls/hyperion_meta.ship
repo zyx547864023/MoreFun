@@ -1,0 +1,117 @@
+{
+  "hullName": "海波龙原型",
+  "hullId": "hyperion_meta",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/hyperion/hyperion_meta.png",
+  "style": "HIGH_TECH",
+  "height": 72,
+  "width": 76,
+  "center": [38, 30],
+  "collisionRadius": 52,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 49.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "high_maintenance"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [3.5, 28]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [3.5, -28]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 185,
+      "angle": 90,
+      "locations": [-11, 10]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 185,
+      "angle": -90,
+      "locations": [-11, -10]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [19, 13]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [19, -13]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26.5, 16.5],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-26.5, -16.5],
+      "length": 64,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-29.5, 4.5],
+      "length": 67,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-29.5, -4.5],
+      "length": 67,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    9, 36.5,
+    41, 0,
+    41, -0,
+    9, -36.5,
+    -14, -36,
+    -29, -8,
+    -29, 8,
+    -14, 36
+  ]
+}

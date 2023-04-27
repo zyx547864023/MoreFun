@@ -1,0 +1,137 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+	},
+	"combatSmall":{
+		"hyperion_meta_variant":3,
+		"hyperion_meta_variant_d":3,
+		"hyperion_meta_variant_n":3,
+	},
+	"combatMedium":{
+	},
+	"combatLarge":{
+
+	},
+	"combatCapital":{
+
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+
+	},
+	"combatFreighterMedium":{
+
+	},
+	"combatFreighterLarge":{
+	
+	},
+	
+	"civilianRandom":{
+
+	},
+
+	# carriers
+	"carrierSmall":{
+
+	},
+	"carrierMedium":{
+
+	},
+	"carrierLarge":{
+
+	},
+
+	# phase ships
+	"phaseSmall":{
+		
+	},
+	"phaseMedium":{
+
+	},
+	"phaseLarge":{
+
+	},
+	"phaseCapital":{
+	},
+
+	# freighters and such
+	"freighterSmall":{
+
+	},
+	"freighterMedium":{
+
+	},
+	"freighterLarge":{
+
+	},
+	
+	"tankerSmall":{
+
+	},
+	"tankerMedium":{
+
+	},
+	"tankerLarge":{
+
+	},
+	
+	"personnelSmall":{
+
+	},
+	"personnelMedium":{
+
+	},
+	"personnelLarge":{
+
+	},
+	
+	"linerSmall":{
+
+	},
+	"linerMedium":{
+
+	},
+	"linerLarge":{
+
+	},
+	
+	# utility ships
+	"tug":{
+
+	},
+	"crig":{
+
+	},
+	"utility":{
+
+	},
+	
+	"orbitalStationLowTech":{
+
+	},
+	
+	"battlestationLowTech":{
+
+	},
+	
+	
+
+
+	# Old/unused below this line
+	"fastAttack":{
+		"hyperion_meta_variant":1,
+		"hyperion_meta_variant_d":1,
+		"hyperion_meta_variant_n":1,
+	},
+
+	"escortSmall":{
+		
+	},
+	"escortMedium":{
+		
+	},
+	
+}

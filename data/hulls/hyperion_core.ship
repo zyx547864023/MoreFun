@@ -1,0 +1,98 @@
+{
+  "hullName": "Hyperion_core",
+  "hullId": "hyperion_core",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/RC/main (2).png",
+  "style": "HIGH_TECH",
+  "height": 289,
+  "width": 186,
+  "center": [93, 124.5],
+  "collisionRadius": 175.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 169.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "high_maintenance",
+    "RC_TrinityForceCore"
+  ],
+  "builtInWeapons": {
+    "WS0004": "phasebeam",
+    "WS0005": "phasebeam"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 45,
+      "locations": [-21, 25.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -46.5,
+      "locations": [-21.5, -25]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [0, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [136, 34.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [136, -34.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-71, 0.5],
+      "length": 110,
+      "width": 33,
+      "angle": -180,
+      "contrailSize": 33,
+      "style": "CUSTOM",
+      "styleId": "RC_TECH"
+    }
+  ],
+  "bounds": [
+    -74, 32,
+    -122.5, 93,
+    -21, 59,
+    -11, 40,
+    82.5, 40.5,
+    82, 25.5,
+    22, 14,
+    65.5, 1.5,
+    65.5, -1.5,
+    22, -14,
+    82, -25.5,
+    82.5, -40.5,
+    -11, -40,
+    -21, -59,
+    -122.5, -93,
+    -74, -32
+  ]
+}

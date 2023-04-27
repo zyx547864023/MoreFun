@@ -1,0 +1,16 @@
+{
+	"id":"reaper_torp_ball_sec",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"size":[14,23],	
+	"center":[7,11],
+	"collisionRadius":9,
+	"collisionClass":"NONE",
+	"explosionColor":[255,100,100,255],
+	"explosionRadius":100,
+	"engineSpec":{"turnAcc":0,
+                      "turnRate":0,
+                      "acc":0,
+                      "dec":0},
+	"sprite":"graphics/missiles/shuttle.png",
+}

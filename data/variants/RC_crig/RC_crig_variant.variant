@@ -1,0 +1,17 @@
+{
+  "variantId": "RC_crig_variant",
+  "hullId": "RC_crig",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 4,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "militarized_subsystems",
+    "augmentedengines"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

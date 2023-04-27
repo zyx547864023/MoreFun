@@ -1,0 +1,30 @@
+{
+  "variantId": "hyperion_meta_variant_d",
+  "hullId": "hyperion_meta",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "phasebeam",
+        "WS0002": "phasebeam",
+        "WS0003": "pdburst",
+        "WS0004": "pdburst",
+        "WS0005": "atropos",
+        "WS0006": "atropos"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

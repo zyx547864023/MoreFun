@@ -1,0 +1,14 @@
+{
+	"id":"asteroid_arm",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"real_combat.shipsystems.scripts.ai.RC_AsteroidArmAI",
+	"statsScript":"real_combat.shipsystems.scripts.RC_AsteroidArm",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

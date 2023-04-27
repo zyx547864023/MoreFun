@@ -1,0 +1,42 @@
+{
+  "variantId": "hyperion_plus_variant",
+  "hullId": "hyperion_plus",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "extendedshieldemitter",
+    "hardenedshieldemitter",
+    "hardened_subsystems",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "ionbeam",
+        "WS 002": "ionbeam",
+        "WS 003": "pilum"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0004": "onslaught_Standard"
+    },
+    {
+      "WS0003": "paragon_Elite"
+    },
+    {
+      "WS0002": "conquest_Elite"
+    },
+    {
+      "WS0001": "conquest_Elite"
+    }
+  ],
+  "wings": []
+}

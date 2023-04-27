@@ -1,0 +1,28 @@
+{
+  "variantId": "hyperion_core_variant",
+  "hullId": "hyperion_core",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "plasma",
+        "WS0002": "sabotpod",
+        "WS0003": "sabotpod",
+        "WS0004": "phasebeam",
+        "WS0005": "phasebeam"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

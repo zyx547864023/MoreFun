@@ -1,0 +1,237 @@
+id,trigger,conditions,script,text,options,notes
+# surplus ship hull,,,,,,
+RC_sShipBlurb,RC_sShip_blurb,,,穿着女仆装的双马尾美少女在东张西望。,,
+RC_sShipOfferOption,RC_sShip_option,,,,RC_sShip_start:向美少女走去,
+RC_sShipBlurbBar,RC_sShip_blurbBar,,SetTextHighlights $sShip_price,"""二刺螈女仆咖啡店新开业，消费满 $sShip_price 还有特殊服务哦！不来看看嘛？""",,
+RC_sShipOfferOptionBar,RC_sShip_optionBar,,,,RC_sShip_startBar:进店看看,
+RC_sShipOfferTextBar,DialogOptionSelected,$option == RC_sShip_startBar,"$missionId = RC_sShip
+SetTextHighlights $sShip_price","""舰长大人您好~""她确认了你的视线后向你抛了一个媚眼""新开的女仆咖啡店有兴趣尝一下我们的招牌红茶吗？""
+
+""新开业有特别服务哦~❤""","RC_sShip_lookBar1:询问服务的细节。
+RC_contact_decline:拒绝。",
+RC_sShipOfferTextContact,DialogOptionSelected,$option == RC_sShip_start,"$missionId = RC_sShip
+SetTextHighlights $sShip_price","""充值 $sShip_price 星币可以单独和女仆在房间里面玩游戏哟~""","RC_sShip_look1:询问服务的细节。
+RC_contact_decline:拒绝。",
+RC_sShipBarLookAtFreighter1,DialogOptionSelected,$option == RC_sShip_lookBar1,"$missionId = RC_sShip
+SetTextHighlights $sShip_price","""充值 $sShip_price 星币可以单独和女仆在房间里面玩游戏哟~""","RC_sShip_lookBar2:听起来不错。
+RC_contact_decline:拒绝。",
+RC_sShipBarLookAtFreighter2,DialogOptionSelected,$option == RC_sShip_lookBar2,DoCanAffordCheck $sShip_price contact_acceptBar false,"""怎么样？想好了吗~？""","contact_acceptBar:以 $sShip_price 星币 进行充值。
+RC_contact_decline:拒绝。",
+RC_sShipLookAtFreighter1,DialogOptionSelected,$option == RC_sShip_look1,"$missionId = RC_sShip
+SetTextHighlights $sShip_price",你拿起终端打开支付界面蠢蠢欲动。,"RC_sShip_look2:听起来不错。
+RC_contact_decline:拒绝。",
+RC_sShipLookAtFreighter2,DialogOptionSelected,$option == RC_sShip_look2,DoCanAffordCheck $sShip_price contact_accept false,你拿起终端打开支付界面蠢蠢欲动。,"contact_accept:以 $sShip_price 星币 进行充值。
+RC_contact_decline:拒绝。",
+RC_sShipPostAccept,ContactPostAccept,$missionId == RC_sShip,"ShowPersonVisual
+RemoveCommodity credits $sShip_priceTrue",你的银行卡被盗刷，全部钱被偷走。,,
+RC_contactPrintAcceptText,ContactPrintAcceptText,$voice == FairyJump,,"""谢谢惠顾~mua~""",,
+RC_contactDecline,DialogOptionSelected,$option == RC_contact_decline,,"""哼！臭屌丝！""",contact_declineBarNoContinue:尴尬地走开。,
+,,,,,,
+# custom production - player orders stuff from contact,,,,,,
+RC_ChangeHyperionOfferOptionBar,RC_ChangeHyperion_optionBar,!$global.RC_ChangeHyperion_completed,"Highlight ""科研人员""",在一个精致的隔间里面，一位 科研人员 穿着的人正在摆弄他的 TriPad。,RC_ChangeHyperion_startBar:走过去看看,
+RC_ChangeHyperionOfferTextBar,DialogOptionSelected,$option == RC_ChangeHyperion_startBar,"ShowPersonVisual
+$missionId = RC_ChangeHyperion
+SetTextHighlights $RC_ChangeHyperion_hyperionMeta","""可算等到您了，舰长大人，听说你找到了传说中的 $RC_ChangeHyperion_hyperionMeta 级护卫舰。""",RC_ChangeHyperion_yes:是的,
+RC_ChangeHyperionYes,DialogOptionSelected,$option == RC_ChangeHyperion_yes,Call $RC_ChangeHyperion_ref showShip,"""我对此非常感兴趣，如果可以的话提供一些材料给我，我会对他进行升级改造，保证性能上有一个你难以想象的飞跃上升，具体的到空间站来，我会给你好好讲解一下我的计划。""",RC_ChangeHyperion_accept:同意,
+,,,,,,
+RC_ChangeHyperionContactAccept,DialogOptionSelected,$option == RC_ChangeHyperion_accept,Call $RC_ChangeHyperion_ref accept,,,
+RC_ChangeHyperionContactDecline,DialogOptionSelected,$option == RC_ChangeHyperion_decline,Call $RC_ChangeHyperion_ref decline,,,
+RC_ChangeHyperionAccept,RC_ChangeHyperionAccept,,"ShowPersonVisual
+Call $RC_ChangeHyperion_ref repSuccess
+$global.RC_ChangeHyperion_completed = true
+$global.RC_ChangeHyperionUltimate_returnHere = true","""太棒了，我在空间站等您。""",contact_acceptBarNoText:继续,
+RC_ChangeHyperionDecline,RC_ChangeHyperionDecline,,"ShowPersonVisual
+#Call $RC_ChangeHyperionPlus repFailure","""我很遗憾，但是没有关系，如果您改注意了，可以随时来找我，我就在这儿的空间站轨道重工业区。""",contact_declineBarNoContinue:继续（拒绝的）,
+#上面是接任务 下面是交任务,,,,,,
+#RC_ChangeHyperionPlusComplete,PickGreeting,"$global.RC_ChangeHyperionPlusComplete_returnHere score:1000
+$id == MeiDo
+$global.RC_ChangeHyperionPlus_completed","ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref updateData","""欢迎光临舰长大人，您来找我是想要更换模块吗？""","RC_ChangeHyperionPlusComplete_waitConquest:我要将左模块换成 征服者 级
+RC_ChangeHyperionPlusComplete_waitAstral:我要将左模块换成 星体 级
+RC_ChangeHyperionPlusComplete_waitOdyssey:我要将做模块换成 奥德赛 级
+cutCommLink:啥也不干",
+#RC_ChangeHyperionPlusCompleteWaitConquest,DialogOptionSelected,"$option == RC_ChangeHyperionPlusComplete_waitConquest
+",$missionId = RC_ChangeHyperionPlusComplete,"""好的，请稍等。""","RC_ChangeHyperionPlusComplete_conquest:好的
+cutCommLink:不了",
+#RC_ChangeHyperionPlusCompleteConquest,DialogOptionSelected,"$option == RC_ChangeHyperionPlusComplete_conquest
+","$missionId = RC_ChangeHyperionPlusComplete
+SetTextHighlights $RC_ChangeHyperionPlusComplete_conquest $RC_ChangeHyperionPlusComplete_astral $RC_ChangeHyperionPlusComplete_astral $RC_ChangeHyperionPlusComplete_cost $RC_ChangeHyperionPlusComplete_days","""将左侧模块更换成 $RC_ChangeHyperionPlusComplete_conquest 级模块需要一艘 $RC_ChangeHyperionPlusComplete_conquest 级战列巡洋舰，改装费用是 $RC_ChangeHyperionPlusComplete_cost 星币，如果有相同的材料会取舰船列表里的第一艘，请注意。""","RC_ChangeHyperionPlusComplete_changeConquest:搞起
+cutCommLink:不了",
+#RC_ChangeHyperionPlusCompleteWaitAstral,DialogOptionSelected,"$option == RC_ChangeHyperionPlusComplete_waitAstral
+",$missionId = RC_ChangeHyperionPlusComplete,"""好的，请稍等。""","RC_ChangeHyperionPlusComplete_astral:好的
+cutCommLink:不了",
+#RC_ChangeHyperionPlusCompleteAstral,DialogOptionSelected,"$option == RC_ChangeHyperionPlusComplete_astral
+","$missionId = RC_ChangeHyperionPlusComplete
+SetTextHighlights $RC_ChangeHyperionPlusComplete_conquest $RC_ChangeHyperionPlusComplete_astral $RC_ChangeHyperionPlusComplete_astral $RC_ChangeHyperionPlusComplete_cost $RC_ChangeHyperionPlusComplete_days","""将左侧模块更换成 $RC_ChangeHyperionPlusComplete_astral 级模块需要一艘 $RC_ChangeHyperionPlusComplete_astral 级航空母舰，改装费用是 $RC_ChangeHyperionPlusComplete_cost 星币，如果有相同的材料会取舰船列表里的第一艘，请注意。""","RC_ChangeHyperionPlusComplete_changeAstral:搞起
+cutCommLink:不了",
+#RC_ChangeHyperionPlusCompleteWaitOdyssey,DialogOptionSelected,"$option == RC_ChangeHyperionPlusComplete_waitOdyssey
+",$missionId = RC_ChangeHyperionPlusComplete,"""好的，请稍等。""","RC_ChangeHyperionPlusComplete_odyssey:好的
+cutCommLink:不了",
+#RC_ChangeHyperionPlusCompleteOdyssey,DialogOptionSelected,"$option == RC_ChangeHyperionPlusComplete_odyssey
+","$missionId = RC_ChangeHyperionPlusComplete
+SetTextHighlights $RC_ChangeHyperionPlusComplete_conquest $RC_ChangeHyperionPlusComplete_astral $RC_ChangeHyperionPlusComplete_astral $RC_ChangeHyperionPlusComplete_cost $RC_ChangeHyperionPlusComplete_days","""将左侧模块更换成 $RC_ChangeHyperionPlusComplete_odyssey 级模块需要一艘 $RC_ChangeHyperionPlusComplete_odyssey 级战列巡洋舰，改装费用是 $RC_ChangeHyperionPlusComplete_cost 星币，如果有相同的材料会取舰船列表里的第一艘，请注意。""","RC_ChangeHyperionPlusComplete_changeOdyssey:搞起
+cutCommLink:不了",
+,,,,,,
+#RC_ChangeHyperionPlusCompleteChangeConquest,DialogOptionSelected,$option == RC_ChangeHyperionPlusComplete_changeConquest,"ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref changeConquest",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
+#RC_ChangeHyperionPlusCompleteChangeAstral,DialogOptionSelected,$option == RC_ChangeHyperionPlusComplete_changeAstral,"ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref changeAstral",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
+#RC_ChangeHyperionPlusCompleteChangeOdyssey,DialogOptionSelected,$option == RC_ChangeHyperionPlusComplete_changeOdyssey,"ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref changeOdyssey",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
+,,,,,,
+RC_ChangeHyperionPlusComplete,PickGreeting,"$global.RC_ChangeHyperionPlusComplete_returnHere score:1000
+$id == MeiDo
+$global.RC_ChangeHyperionPlus_completed",ShowPersonVisual,"""欢迎光临舰长大人，您来找我是想要更换模块吗？""","RC_ChangeHyperionPlusComplete_showOption:是的
+cutCommLink:啥也不干",
+RC_ChangeHyperionPlusCompleteShowOption,DialogOptionSelected,"$option == RC_ChangeHyperionPlusComplete_showOption
+",Call $global.RC_ChangeHyperionPlusComplete_ref showOption,这名科研人员将手中的 TriPad 递了过来。,,
+,,,,,,
+RC_ChangeHyperionChange,DialogOptionSelected,"$option == RC_ChangeHyperionChange
+","ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref change
+Call $global.RC_ChangeHyperionPlusComplete_ref showOption",,,
+#RC_ChangeHyperionChange1,DialogOptionSelected,"$option == RC_ChangeHyperionChange1
+","ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref change
+Call $global.RC_ChangeHyperionPlusComplete_ref showOption",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
+#RC_ChangeHyperionChange2,DialogOptionSelected,"$option == RC_ChangeHyperionChange2
+","ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref change
+Call $global.RC_ChangeHyperionPlusComplete_ref showOption",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
+#RC_ChangeHyperionChange3,DialogOptionSelected,"$option == RC_ChangeHyperionChange3
+","ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref change
+Call $global.RC_ChangeHyperionPlusComplete_ref showOption",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
+#RC_ChangeHyperionChange4,DialogOptionSelected,"$option == RC_ChangeHyperionChange4
+","ShowPersonVisual
+Call $global.RC_ChangeHyperionPlusComplete_ref change
+Call $global.RC_ChangeHyperionPlusComplete_ref showOption",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
+,,,,,,
+RC_ChangeHyperionSuccess,RC_ChangeHyperionSuccess,,"ShowPersonVisual
+Call $mHub repSuccess","""改造项目启动，结果一定会让您满意。""",cutCommLink:切断通讯链接,
+RC_ChangeHyperionNeed,RC_ChangeHyperionNeed,,Call $mHub returnToList,"""您的改造材料尚未集齐，当您集齐时带过来，改造项目将立马启动。""",cutCommLink:切断通讯链接,
+RC_ChangeHyperionAlready,RC_ChangeHyperionAlready,,"Call $global.RC_ChangeHyperionPlusComplete_ref showShip
+Call $mHub returnToList
+SetTextHighlights $RC_ChangeHyperionPlusComplete_mod","""您的舰船左侧已经是 $RC_ChangeHyperionPlusComplete_mod 级模块了，无需更换。""",,
+RC_ChangeHyperionIndustry,RC_ChangeHyperionIndustry,,Call $mHub returnToList,"""很遗憾，该殖民地已经没有足够的工业设施进行改造。""",,
+RC_ChangeHyperionLeave,DialogOptionSelected,"$option == RC_ChangeHyperionLeave
+",Call $global.RC_ChangeHyperionPlusComplete_ref leave,"""如果有需要，随时可以回来找我。""",cutCommLink:切断通讯链接,
+RC_ChangeHyperionLast,DialogOptionSelected,"$option == RC_ChangeHyperionLast
+",Call $global.RC_ChangeHyperionPlusComplete_ref last,,,
+RC_ChangeHyperionNext,DialogOptionSelected,"$option == RC_ChangeHyperionNext
+",Call $global.RC_ChangeHyperionPlusComplete_ref next,,,
+RC_ChangeHyperionReturn,DialogOptionSelected,"$option == RC_ChangeHyperionReturn
+",Call $global.RC_ChangeHyperionPlusComplete_ref return,,,
+RC_ChangeHyperionShowOption0,DialogOptionSelected,$option == RC_ChangeHyperionShowOption0,Call $global.RC_ChangeHyperionPlusComplete_ref showOption0,,,
+RC_ChangeHyperionShowOption1,DialogOptionSelected,$option == RC_ChangeHyperionShowOption1,Call $global.RC_ChangeHyperionPlusComplete_ref showOption1,,,
+RC_ChangeHyperionShowOption2,DialogOptionSelected,$option == RC_ChangeHyperionShowOption2,Call $global.RC_ChangeHyperionPlusComplete_ref showOption2,,,
+RC_ChangeHyperionShowOption3,DialogOptionSelected,$option == RC_ChangeHyperionShowOption3,Call $global.RC_ChangeHyperionPlusComplete_ref showOption3,,,
+RC_ChangeHyperionShowOption4,DialogOptionSelected,$option == RC_ChangeHyperionShowOption4,Call $global.RC_ChangeHyperionPlusComplete_ref showOption4,,,
+,,,,,,
+RC_ChangeHyperionPlus,PickGreeting,"$global.RC_ChangeHyperionPlus_returnHere score:1000
+$global.RC_ChangeHyperionUltimate_completed 
+$id == MeiDo
+!$global.RC_ChangeHyperionPlus_completed","ShowPersonVisual
+Call $global.RC_ChangeHyperionPlus_ref updateData
+SetTextHighlights ""海波龙原型"" ""亥伯龙""","""通过改造 海波龙原型 级，我有了新的想法，将量产型 亥伯龙 级先进炮艇改装成模块化超级战舰，有兴趣吗？""","RC_ChangeHyperionPlus_wait:我要改装海波龙核心
+cutCommLink:啥也不干",
+RC_ChangeHyperionPlusWait,DialogOptionSelected,"$option == RC_ChangeHyperionPlus_wait
+",$missionId = RC_ChangeHyperionPlus,"""好的，请稍等。""","RC_ChangeHyperionPlus_start:好的
+cutCommLink:不了",
+RC_ChangeHyperionPlusOfferTextContact,DialogOptionSelected,"$option == RC_ChangeHyperionPlus_start
+","$missionId = RC_ChangeHyperionPlus
+SetTextHighlights $RC_ChangeHyperionPlus_onslaught $RC_ChangeHyperionPlus_paragon $RC_ChangeHyperionPlus_conquest $RC_ChangeHyperionPlus_cost $RC_ChangeHyperionPlus_days","这名科研人员将手中的 TriPad 递了过来。
+
+""这需要一艘 $RC_ChangeHyperionPlus_onslaught 级战列舰、一艘 $RC_ChangeHyperionPlus_paragon 级战列舰、两艘 $RC_ChangeHyperionPlus_conquest 级战列巡洋舰作为材料，改装费用是 $RC_ChangeHyperionPlus_cost 星币，改造将在 $RC_ChangeHyperionPlus_days 天后完成，如果有相同的材料会取舰船列表里的第一艘，请注意。""","RC_ChangeHyperionPlus_check:检查配置
+cutCommLink:不了",
+RC_ChangeHyperionPlusCheck,DialogOptionSelected,"$option == RC_ChangeHyperionPlus_check
+",Call $global.RC_ChangeHyperionPlus_ref showShip,,"RC_ChangeHyperionPlus_change:满意
+cutCommLink:不了",
+RC_ChangeHyperionPlusChange,DialogOptionSelected,$option == RC_ChangeHyperionPlus_change,"ShowPersonVisual
+Call $global.RC_ChangeHyperionPlus_ref change
+#$option = contact_acceptNoText 0
+#Call $global.RC_ChangeHyperionPlus_ref repSuccess
+#$global.RC_ChangeHyperionPlus_completed = true",,cutCommLink:切断通讯链接,
+,,,,,,
+RC_ChangeHyperionUltimate,PickGreeting,"$global.RC_ChangeHyperionUltimate_returnHere score:1000
+$id == MeiDo
+!$global.RC_ChangeHyperionUltimate_completed","ShowPersonVisual
+Call $global.RC_ChangeHyperionUltimate_ref updateData","""欢迎光临舰长大人，您来找我说明已经下定决心了吗？""","RC_ChangeHyperionUltimate_wait:我要改装海波龙原型
+cutCommLink:啥也不干",
+RC_ChangeHyperionUltimateWait,DialogOptionSelected,"$option == RC_ChangeHyperionUltimate_wait
+",$missionId = RC_ChangeHyperionUltimate,"""好的，请稍等。""","RC_ChangeHyperionUltimate_start:好的
+cutCommLink:不了",
+RC_ChangeHyperionUltimateOfferTextContact,DialogOptionSelected,"$option == RC_ChangeHyperionUltimate_start
+","$missionId = RC_ChangeHyperionUltimate
+SetTextHighlights $RC_ChangeHyperionUltimate_fury $RC_ChangeHyperionUltimate_odyssey $RC_ChangeHyperionUltimate_scarab $RC_ChangeHyperionUltimate_afflictor $RC_ChangeHyperionUltimate_harbinger $RC_ChangeHyperionUltimate_hyperionMeta $RC_ChangeHyperionUltimate_a $RC_ChangeHyperionUltimate_cost $RC_ChangeHyperionUltimate_days","这名科研人员将手中的 TriPad 递了过来。
+
+""改造需要一艘 $RC_ChangeHyperionUltimate_fury 级巡洋舰或 $RC_ChangeHyperionUltimate_odyssey 级战列巡洋舰、一艘 $RC_ChangeHyperionUltimate_scarab 级重型护卫舰、一艘 $RC_ChangeHyperionUltimate_afflictor 级相位护卫舰、一艘 $RC_ChangeHyperionUltimate_harbinger 级相位驱逐舰作为材料，当然还有最重要的 $RC_ChangeHyperionUltimate_hyperionMeta 级先进炮艇以及整合系统所需的一颗 $RC_ChangeHyperionUltimate_a，改装费用是 $RC_ChangeHyperionUltimate_cost 星币，改造将在 $RC_ChangeHyperionUltimate_days 天后完成，如果有相同的材料会取舰船列表里的第一艘，请注意。""","RC_ChangeHyperionUltimate_change:搞起
+cutCommLink:不了",
+RC_ChangeHyperionUltimateChange,DialogOptionSelected,$option == RC_ChangeHyperionUltimate_change,"ShowPersonVisual
+Call $global.RC_ChangeHyperionUltimate_ref change
+#$option = contact_acceptNoText 0
+#Call $global.RC_ChangeHyperionUltimate_ref repSuccess
+#$global.RC_ChangeHyperionUltimate_completed = true
+#$global.RC_ChangeHyperionPlus_returnHere = true",,cutCommLink:切断通讯链接,
+#参考,,,,,,
+#RC_ChangeHyperionPlus_noHamatsuOption,PopulateOptions,"$isPerson
+$id == MeiDo
+!$global.RC_ChangeHyperionPlus_completed",,,RC_ChangeHyperionPlus_noHamatsu:告诉 Ibrahim 你找到 Hamatsu 号和 Kelise Astraia 遗体的事,
+#RC_ChangeHyperionPlus_noHamatsu,DialogOptionSelected,$option == RC_ChangeHyperionPlus_noHamatsu,$hamatsuSpielSaid = true,"你告诉 Ibrahim 你找到了 Hamatsu 号的残骸，还有 Kelise Astraia 的遗体。
+
+""天啊，我...我不知道该说什么好，太可惜了，没想到她的一生结束的如此凄惨，"" Ibrahim 擦了擦眼泪，""如此光辉的生涯不该就这么结束的 - 尽管有一些波澜，但对我来说没有任何一艘船能比得上她。""","RC_ChangeHyperionPlus_noHamatsu1:""...到头来你说的是你的船啊？""",
+#RC_ChangeHyperionPlus_noHamatsu1,DialogOptionSelected,$option == RC_ChangeHyperionPlus_noHamatsu1,"Highlight ""100,000""","""当然了！Hamatsu 号陪伴了我许多年。""
+
+"" Kelise Astraia 吗？那是她应有的结局。她知道她面对着多大的风险，但在考虑这些风险时，她太笨了，没有谨慎行事。"" Ibrahim 噘着嘴，似乎很不满。""像她这样的人会害死很多优秀的太空船员。""她停顿了一下，""我已经在尝试忘掉她了。""
+
+""所以，舰长，想要再来一份工作吗？我想取回 Hamatsu 号，修好它，给它一次新生 —— 繁星在上，这艘船值得 —— 但是我不知道我该怎么让救援船进入你说的这个未成型的跳跃点，所以这得靠你了。""
+
+她又看向了你，带着评估一般的目光：""我会让这次任务值得的，对这么一艘船来说，100,000 星币我想应该足够了。""","RC_ChangeHyperionPlus_noHamatsu2:""我会牢记在心的。""",
+#RC_ChangeHyperionPlus_noHamatsuShort,DialogOptionSelected,"$option == RC_ChangeHyperionPlus_noHamatsu
+$hamatsuSpielSaid","Highlight ""100,000""","Ibrahim 看着你：""我依然希望能找回 Hamatsu 号，这 100,000 星币是笔很轻松就能赚到的钱，舰长。""","RC_ChangeHyperionPlus_noHamatsu2:""我会牢记在心的。""",
+#RC_ChangeHyperionPlus_noHamatsu2,DialogOptionSelected,$option == RC_ChangeHyperionPlus_noHamatsu2,FireAll PopulateOptions,,,
+#RC_ChangeHyperionPlus_withHamatsu,PickGreeting,"$RC_ChangeHyperionPlus_returnHere score:1000
+PlayerFleetHasShipWithId hamatsu
+Call $global.RC_ChangeHyperionPlus_ref updateData
+!$global.RC_ChangeHyperionPlus_completed","ShowPersonVisual
+Highlight $RC_ChangeHyperionPlus_reward
+$hamatsuSpielSaid = true
+FireBest CheckHamatsuIsOnlyShip","Ibrahim 看起来很兴奋，甚至连招呼都没打就滔滔不绝起来：""如果传感器和轨道导航注册系统没有骗我，你带回了我的飞船 Hamatsu 号！舰长，十分感谢！""
+
+""我现在就给你 $RC_ChangeHyperionPlus_reward 星币，这样一来我们的约定就履行完毕了。你甚至不用把它送到修理厂，剩下的都由我处理。我的仓库里已经放着新的超空间引擎了，还有几位优秀的工程师正随时待命。""","RC_ChangeHyperionPlus_yes:把 Hamatsu 号交给 Ibrahim
+RC_ChangeHyperionPlus_no:""抱歉，我想将这艘船留在我的舰队中。""",
+#RC_ChangeHyperionPlus_checkHamatsuIsOnlyShip,CheckHamatsuIsOnlyShip,$player.numShips == 1,"SetEnabled RC_ChangeHyperionPlus_yes false
+SetTooltip RC_ChangeHyperionPlus_yes ""不允许送走你舰队中的最后一艘船。""",,,
+#RC_ChangeHyperionPlus_yes,DialogOptionSelected,$option == RC_ChangeHyperionPlus_yes,#AdjustRepActivePerson COOPERATIVE 25,"Ibrahim 的脸上笑容灿烂：""谢谢你，舰长。如果你不介意的话我就先挂断了，毕竟我还有很多事要做。""
+
+她将手伸向断开通讯链接的按钮，在挂断前顿了一下：""如果你需要工作，告诉我一声就好。新工作总是层出不穷，一个有能耐的舰长值得赚到更多的星币。""",RC_ChangeHyperionPlus_yes2:继续,
+#RC_ChangeHyperionPlus_yes2,DialogOptionSelected,$option == RC_ChangeHyperionPlus_yes2,"Call $global.RC_ChangeHyperionPlus_ref transferHamatsu
+$global.RC_ChangeHyperionPlus_completed = true
+Call $global.RC_ChangeHyperionPlus_ref updateStage",,cutCommLink:切断通讯链接,
+#RC_ChangeHyperionPlus_no,DialogOptionSelected,$option == RC_ChangeHyperionPlus_no,FireBest CheckHamatsuIsOnlyShip,"她愣住了，然后盯着你开口道：""你不会是认真的吧？我出的价钱已经远远超过这艘破损成这样的船本身的价值了，也只有我一个人会愿意开这么高的价买下 Hamatsu 号。""说着她的手握成了拳头，看起来很紧张，""再考虑一下吧。""","RC_ChangeHyperionPlus_yes:把 Hamatsu 号交给 Ibrahim
+RC_ChangeHyperionPlus_no2:""我已经下定决心了，再见。""",
+#RC_ChangeHyperionPlus_no2,DialogOptionSelected,$option == RC_ChangeHyperionPlus_no2,"Call $global.RC_ChangeHyperionPlus_ref refusedToReturn
+$global.RC_ChangeHyperionPlus_failed = true
+AdjustRepActivePerson HOSTILE -40
+Call $global.RC_ChangeHyperionPlus_ref updateStage",Ibrahim 刚想说什么时，你已经切断了通讯。,cutCommLinkNoText:继续,
+# RC_ChangeHyperionPlus - consequences for refusing to sell the Hamatsu,,,,,,
+#RC_ChangeHyperionPlusRevengeEncounter,BeginFleetEncounter,"$RC_ChangeHyperionPlus_consequences score:1000
+!$RC_ChangeHyperionPlus_encounteredAlready","$RC_ChangeHyperionPlus_encounteredAlready = true
+FleetDesc
+HailPlayer",,,
+#RC_ChangeHyperionPlusRevengeOpenComm,OpenCommLink,"$entity.RC_ChangeHyperionPlus_consequences score:1000
+!$entity.ignorePlayerCommRequests",$entity.ignorePlayerCommRequests = true,"""我猜您就是 $playername 舰长了。""雇佣兵指挥官沉稳的声音传来，""我的雇主很失望，因为你没有...呃...好好地重新考虑一下。""$heOrShe说出最后一个词时语气很怪，过了一会，你想起了自己和 Callisto Ibrahim 进行过的一次激烈谈话 —— 那时你拒绝交出她的旧船 —— 当时她在谈话中就用了 ""重新考虑"" 这个词。
+
+$HeOrShe就这么看着你，并在你摆出意识到了什么的表情时切断了通讯链接。",cutCommLinkNoText:继续,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

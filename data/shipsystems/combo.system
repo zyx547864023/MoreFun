@@ -1,0 +1,35 @@
+{
+	"id":"combo",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"real_combat.shipsystems.scripts.ai.RC_ComboSystemAI",
+	"statsScript":"real_combat.shipsystems.scripts.RC_ComboSystem",
+	
+	"engineGlowColor":[100,255,100,255],
+	#"engineGlowContrailColor":[100,165,255,25],
+	"engineGlowLengthMult":3,
+	"engineGlowWidthMult":1.5,
+	"engineGlowGlowMult":3,
+	
+	#"flameoutOnImpactChance":0.5,
+
+    "clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	#"alwaysAccelerate":true,
+
+	#"useSound":"system_burn_drive_activate",
+	#"loopSound":"system_burn_drive_loop",
+	#"deactivateSound":"system_burn_drive_deactivate",
+	#"outOfUsesSound":"engine_disabled",
+	
+	"useSound":"system_plasma_burn",
+	"loopSound":"system_plasma_burn_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":400,
+		"averageSpeedIncrease":50,
+	}
+}

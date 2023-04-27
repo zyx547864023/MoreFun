@@ -1,0 +1,29 @@
+{
+  "variantId": "hyperion_meta_variant_n",
+  "hullId": "hyperion_meta",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ionpulser",
+        "WS0002": "ionpulser",
+        "WS0003": "pdburst",
+        "WS0004": "pdburst",
+        "WS0005": "lightneedler",
+        "WS0006": "lightneedler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

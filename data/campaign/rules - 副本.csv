@@ -1,0 +1,39 @@
+id,trigger,conditions,script,text,options,notes
+#上面是接任务 下面是交任务,,,,,,
+#RC_ChangeHyperionPlus_withHamatsu,PickGreeting,$id == MeiDo,"ShowPersonVisual
+$hamatsuSpielSaid = true
+FireBest CheckHamatsuIsOnlyShip","Ibrahim 看起来很兴奋，甚至连招呼都没打就滔滔不绝起来：""如果传感器和轨道导航注册系统没有骗我，你带回了我的飞船 Hamatsu 号！舰长，十分感谢！""
+
+""我现在就给你 $RC_ChangeHyperionPlus_reward 星币，这样一来我们的约定就履行完毕了。你甚至不用把它送到修理厂，剩下的都由我处理。我的仓库里已经放着新的超空间引擎了，还有几位优秀的工程师正随时待命。""","RC_ChangeHyperionPlus_yes:把 Hamatsu 号交给 Ibrahim
+RC_ChangeHyperionPlus_no:""抱歉，我想将这艘船留在我的舰队中。""",
+#RC_ChangeHyperionPlus_checkHamatsuIsOnlyShip,CheckHamatsuIsOnlyShip,$player.numShips == 1,"SetEnabled RC_ChangeHyperionPlus_yes false
+SetTooltip RC_ChangeHyperionPlus_yes ""不允许送走你舰队中的最后一艘船。""",,,
+#RC_ChangeHyperionPlus_yes,DialogOptionSelected,$option == RC_ChangeHyperionPlus_yes,,"Ibrahim 的脸上笑容灿烂：""谢谢你，舰长。如果你不介意的话我就先挂断了，毕竟我还有很多事要做。""
+
+她将手伸向断开通讯链接的按钮，在挂断前顿了一下：""如果你需要工作，告诉我一声就好。新工作总是层出不穷，一个有能耐的舰长值得赚到更多的星币。""",RC_ChangeHyperionPlus_yes2:继续1,
+#RC_ChangeHyperionPlus_no,DialogOptionSelected,$option == RC_ChangeHyperionPlus_no,FireBest CheckHamatsuIsOnlyShip,"她愣住了，然后盯着你开口道：""你不会是认真的吧？我出的价钱已经远远超过这艘破损成这样的船本身的价值了，也只有我一个人会愿意开这么高的价买下 Hamatsu 号。""说着她的手握成了拳头，看起来很紧张，""再考虑一下吧。""","RC_ChangeHyperionPlus_yes:把 Hamatsu 号交给 Ibrahim
+RC_ChangeHyperionPlus_no2:""我已经下定决心了，再见。""",
+#RC_ChangeHyperionPlus_yes2,DialogOptionSelected,$option == RC_ChangeHyperionPlus_yes2,Call $global.RC_ChangeHyperionPlus_ref pickContactBP,,cutCommLink:切断通讯链接,
+#RC_ChangeHyperionPlus_no2,DialogOptionSelected,$option == RC_ChangeHyperionPlus_no2,$global.RC_ChangeHyperionPlus_failed = true,Ibrahim 刚想说什么时，你已经切断了通讯。,cutCommLinkNoText:继续2,
+#RC_ChangeHyperionPlusBPPicked,RC_ChangeHyperionPlusBlueprintsPicked,,"ShowPersonVisual
+$missionId = RC_ChangeHyperionUltimate
+$option = contact_acceptNoText 0
+FireBest DialogOptionSelected
+Call $global.RC_ChangeHyperionPlus_ref repSuccess
+Call $global.RC_ChangeHyperionPlus_ref addContacts",,,
+#RC_ChangeHyperionPlusBPPickedBar,RC_ChangeHyperionPlusBlueprintsPicked,$RC_ChangeHyperionPlus_barEvent,"ShowPersonVisual
+$option = contact_acceptBar 0
+FireBest DialogOptionSelected
+Call $ChangeHyperionUltimate_ref repSuccess
+Call $ChangeHyperionUltimate_ref addContacts",,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
