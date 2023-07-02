@@ -6,7 +6,7 @@
   "style": "LOW_TECH",
   "height": 357,
   "width": 200,
-  "center": [100, 172.5],
+  "center": [101.5, 182],
   "collisionRadius": 200,
   "shieldCenter": [0, -0],
   "shieldRadius": 194.5,
@@ -28,7 +28,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": 31,
-      "locations": [83.5, 25]
+      "locations": [74.5, 25]
     },
     {
       "id": "WS0002",
@@ -37,7 +37,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": -31,
-      "locations": [83.5, -25]
+      "locations": [74.5, -25]
     },
     {
       "id": "WS0003",
@@ -46,7 +46,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": -58.5,
-      "locations": [37.5, -21.5]
+      "locations": [28.5, -21.5]
     },
     {
       "id": "WS0004",
@@ -55,7 +55,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": 58.5,
-      "locations": [37.5, 21.5]
+      "locations": [28.5, 21.5]
     },
     {
       "id": "WS0005",
@@ -64,39 +64,39 @@
       "mount": "TURRET",
       "arc": 145,
       "angle": 0,
-      "locations": [115.5, -0]
+      "locations": [106.5, 0]
     },
     {
       "id": "WS0007",
       "size": "MEDIUM",
       "type": "BALLISTIC",
-      "mount": "HARDPOINT",
+      "mount": "TURRET",
       "arc": 250,
       "angle": 180,
-      "locations": [-3, -0]
+      "locations": [-12, 0]
     },
     {
       "id": "WS0006",
       "size": "SMALL",
       "type": "BALLISTIC",
-      "mount": "HARDPOINT",
+      "mount": "TURRET",
       "arc": 90,
       "angle": 10,
-      "locations": [54.5, 68]
+      "locations": [45, 68.5]
     },
     {
       "id": "WS0008",
       "size": "SMALL",
       "type": "BALLISTIC",
-      "mount": "HARDPOINT",
+      "mount": "TURRET",
       "arc": 90,
       "angle": -10,
-      "locations": [54.5, -68]
+      "locations": [45, -68.5]
     }
   ],
   "engineSlots": [
     {
-      "location": [-40.5, 28],
+      "location": [-46, 28],
       "length": 90.5,
       "width": 38,
       "angle": 180,
@@ -104,7 +104,7 @@
       "style": "LOW_TECH"
     },
     {
-      "location": [-40.5, -28],
+      "location": [-46, -28],
       "length": 90.5,
       "width": 38,
       "angle": -180,
@@ -113,13 +113,13 @@
     }
   ],
   "bounds": [
-    48.5, -42.5,
-    40, -98.5,
-    80, -45.5,
-    185, -0.5,
-    80, 45.5,
-    40, 98.5,
-    48.5, 42.5,
-    -166, 0.5
+    39, -43,
+    30.5, -99,
+    70.5, -46,
+    175.5, -1,
+    70.5, 45,
+    30.5, 98,
+    39, 42,
+    -175.5, 0
   ]
 }

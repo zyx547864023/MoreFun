@@ -2,14 +2,14 @@
   "hullName": "究极海波龙",
   "hullId": "hyperion_ultimate",
   "hullSize": "FRIGATE",
-  "spriteName": "graphics/ships/hyperion/hyperion_meta.png",
+  "spriteName": "graphics/ships/hyperion/hyperion_ultimate.png",
   "style": "HIGH_TECH",
-  "height": 72,
-  "width": 76,
-  "center": [38, 30],
-  "collisionRadius": 52,
-  "shieldCenter": [0, -0],
-  "shieldRadius": 49.5,
+  "height": 98,
+  "width": 98,
+  "center": [49, 51],
+  "collisionRadius": 57.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 55.5,
   "viewOffset": 0,
   "builtInMods": [
     "high_maintenance"
@@ -21,8 +21,8 @@
       "type": "ENERGY",
       "mount": "HARDPOINT",
       "arc": 10,
-      "angle": 0,
-      "locations": [3.5, 28]
+      "angle": -3,
+      "locations": [8.5, 29]
     },
     {
       "id": "WS0002",
@@ -30,8 +30,8 @@
       "type": "ENERGY",
       "mount": "HARDPOINT",
       "arc": 10,
-      "angle": -0,
-      "locations": [3.5, -28]
+      "angle": 3,
+      "locations": [8.5, -29]
     },
     {
       "id": "WS0003",
@@ -40,7 +40,7 @@
       "mount": "TURRET",
       "arc": 185,
       "angle": 90,
-      "locations": [-11, 10]
+      "locations": [-14.5, 10.5]
     },
     {
       "id": "WS0004",
@@ -49,7 +49,7 @@
       "mount": "TURRET",
       "arc": 185,
       "angle": -90,
-      "locations": [-11, -10]
+      "locations": [-14.5, -10.5]
     },
     {
       "id": "WS0005",
@@ -58,7 +58,7 @@
       "mount": "HARDPOINT",
       "arc": 10,
       "angle": 0,
-      "locations": [19, 13]
+      "locations": [26, 20.5]
     },
     {
       "id": "WS0006",
@@ -67,12 +67,12 @@
       "mount": "HARDPOINT",
       "arc": 10,
       "angle": -0,
-      "locations": [19, -13]
+      "locations": [26, -20.5]
     }
   ],
   "engineSlots": [
     {
-      "location": [-26.5, 16.5],
+      "location": [-26, 27],
       "length": 64,
       "width": 12,
       "angle": 180,
@@ -80,7 +80,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-26.5, -16.5],
+      "location": [-26, -27],
       "length": 64,
       "width": 12,
       "angle": -180,
@@ -88,7 +88,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-29.5, 4.5],
+      "location": [-34.5, 10.5],
       "length": 67,
       "width": 16,
       "angle": 180,
@@ -96,7 +96,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-29.5, -4.5],
+      "location": [-34.5, -10.5],
       "length": 67,
       "width": 16,
       "angle": -180,
@@ -104,7 +104,7 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-17, 32.5],
+      "location": [-14.5, 38.5],
       "length": 12,
       "width": 4,
       "angle": 177,
@@ -112,7 +112,23 @@
       "style": "HIGH_TECH"
     },
     {
-      "location": [-17, -32.5],
+      "location": [-14.5, -38.5],
+      "length": 12,
+      "width": 4,
+      "angle": -177,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-5.5, 44.5],
+      "length": 12,
+      "width": 4,
+      "angle": 177,
+      "contrailSize": 128,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-5.5, -44.5],
       "length": 12,
       "width": 4,
       "angle": -177,
@@ -121,13 +137,13 @@
     }
   ],
   "bounds": [
-    9, 36.5,
-    41, 0,
-    41, -0,
-    9, -36.5,
-    -14, -36,
-    -29, -8,
-    -29, 8,
-    -14, 36
+    13, 37,
+    45, 0.5,
+    45, 0.5,
+    13, -36,
+    -10, -35.5,
+    -25, -7.5,
+    -25, 8.5,
+    -10, 36.5
   ]
 }

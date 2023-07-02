@@ -14,5 +14,8 @@
 		"beamfringec":{
 			"beamfringec":"graphics/fx/beamfringec.png",
 		},
+		"MeiDo":{
+			"MeiDo":"graphics/portraits/independent/56.png",
+		},
 	}
 }

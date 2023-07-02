@@ -12,5 +12,5 @@
                       "turnRate":0,
                       "acc":0,
                       "dec":0},
-	"sprite":"graphics/missiles/shuttle.png",
+	"sprite":"graphics/missiles/shuttle_in.png",
 }

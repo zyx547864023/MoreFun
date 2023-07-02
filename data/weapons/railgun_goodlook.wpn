@@ -5,8 +5,8 @@
 	"size":"SMALL",
 	"turretSprite":"graphics/weapons/flechette_turret_base.png",
 	"turretGunSprite":"graphics/weapons/flechette_turret_recoil.png",
-	"hardpointSprite":"graphics/weapons/flechette_hardpoint_base.png",
-	"hardpointGunSprite":"graphics/weapons/flechette_hardpoint_recoil.png",	
+	"hardpointSprite":"graphics/weapons/RC_flechette_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/weapons/RC_flechette_hardpoint_recoil.png",	
 	"visualRecoil":3.0,  # the gun sprites are only used if this is non-0
 	"renderHints":["RENDER_BARREL_BELOW"],
 	"turretOffsets":[13, 0],

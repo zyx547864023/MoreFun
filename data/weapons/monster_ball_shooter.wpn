@@ -1,29 +1,48 @@
 {
-	"id":"monster_ball_shooter",
-	"specClass":"projectile",
-	"type":"MISSILE",
-	"size":"MEDIUM",
-	"turretSprite":"graphics/weapons/typhoon_reaper_launcher_turret_pirate.png",
-	"hardpointSprite":"graphics/weapons/typhoon_reaper_launcher_hardpoint_pirate.png",
-	"hardpointOffsets":[20, 0],
-	"turretOffsets":[20, 0],
-	"hardpointAngleOffsets":[0],
-	"turretAngleOffsets":[0],
-	"barrelMode":"LINKED",
-	"animationType":"SMOKE",
-	#"renderHints":[RENDER_LOADED_MISSILES],
-	"interruptibleBurst":false,
-	"displayArcRadius":1000,
-	"smokeSpec":{"particleSizeMin":20.0,
-				 "particleSizeRange":20.0,
-				 "cloudParticleCount":3,
-				 "cloudDuration":1.0,
-				 "cloudRadius":10.0,
-				 "blowbackParticleCount":3,
-				 "blowbackDuration":2.0,
-				 "blowbackLength":30.0,
-				 "blowbackSpread":10.0,
-				 "particleColor":[100,100,100,200]},
-	"projectileSpecId":"reaper_torp_ball",
-	"fireSoundTwo":"reaper_fire",
+  "id": "monster_ball_shooter",
+  "specClass": "projectile",
+  "projectileSpecId": "reaper_torp_ball",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 1000,
+  "turretSprite": "graphics/weapons/typhoon_reaper_launcher_turret_pirate.png",
+  "hardpointSprite": "graphics/weapons/typhoon_reaper_launcher_hardpoint_pirate.png",
+  "hardpointUnderSprite": "graphics/weapons/typhoon_reaper_launcher_hardpoint_pirate.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    6,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    9,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "reaper_fire"
 }
