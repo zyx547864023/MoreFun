@@ -1,0 +1,43 @@
+{
+  "id": "explosive_blast_bullet",
+  "specClass": "projectile",
+  "projectileSpecId": "plasma_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/ships/blue_eyes/head00.png",
+  "hardpointSprite": "graphics/ships/blue_eyes/head00.png",
+  "turretOffsets": [
+    37,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    40,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "numFrames": 3,
+  "frameRate": 9,
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": -34,
+    "spread": 15,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "particleDuration": 0.15,
+    "particleCount": 30,
+    "particleColor": [
+      255,
+      100,
+      150,
+      255
+    ]
+  },
+  "fireSoundTwo": "plasma_cannon_fire"
+}

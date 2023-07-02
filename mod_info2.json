@@ -1,0 +1,14 @@
+{
+	id: "US",
+	"name": "未知星域[Unknown*Skies]",
+	"author": "Tarti flette",
+	"version": {
+		"major": '1',
+		"minor": '0',
+		"patch": 'orc2'
+	},
+	"description": "在战后打开网络界面('E')显示详细的战斗报告，在大地图中按。L'以合并分析记录。",
+	"gameVersion": "0.95a- -RC9",
+	"jars": ["jars/Us.jar"],
+	"modPlugin": "data.scripts.US_modPlugin"
+}
