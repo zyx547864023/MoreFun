@@ -18,12 +18,29 @@
       "mode": "LINKED",
       "weapons": {
         "WS0001": "phasebeam_sun",
-        "WS0002": "phasebeam_ice",
+        "WS0002": "phasebeam_ice"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
         "WS0003": "ioncannon_goodlook",
-        "WS0004": "ioncannon_goodlook",
+        "WS0004": "ioncannon_goodlook"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
         "WS0005": "railgun_goodlook",
         "WS0006": "railgun_goodlook"
       }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
     }
   ],
   "modules": [],

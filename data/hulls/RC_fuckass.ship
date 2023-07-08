@@ -5,8 +5,8 @@
   "spriteName": "graphics/ships/RC/00007-1.png",
   "style": "LOW_TECH",
   "height": 357,
-  "width": 200,
-  "center": [101.5, 182],
+  "width": 201,
+  "center": [100.5, 182],
   "collisionRadius": 200,
   "shieldCenter": [0, -0],
   "shieldRadius": 194.5,
@@ -28,7 +28,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": 31,
-      "locations": [74.5, 25]
+      "locations": [74.5, 24]
     },
     {
       "id": "WS0002",
@@ -37,7 +37,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": -31,
-      "locations": [74.5, -25]
+      "locations": [74.5, -24]
     },
     {
       "id": "WS0003",
@@ -46,7 +46,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": -58.5,
-      "locations": [28.5, -21.5]
+      "locations": [28.5, -20]
     },
     {
       "id": "WS0004",
@@ -55,7 +55,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": 58.5,
-      "locations": [28.5, 21.5]
+      "locations": [28.5, 20.5]
     },
     {
       "id": "WS0005",
@@ -64,7 +64,7 @@
       "mount": "TURRET",
       "arc": 145,
       "angle": 0,
-      "locations": [106.5, 0]
+      "locations": [106.5, -0]
     },
     {
       "id": "WS0007",
@@ -90,13 +90,13 @@
       "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 90,
-      "angle": -10,
+      "angle": 0,
       "locations": [45, -68.5]
     }
   ],
   "engineSlots": [
     {
-      "location": [-46, 28],
+      "location": [-46, 28.5],
       "length": 90.5,
       "width": 38,
       "angle": 180,
@@ -104,7 +104,7 @@
       "style": "LOW_TECH"
     },
     {
-      "location": [-46, -28],
+      "location": [-46, -28.5],
       "length": 90.5,
       "width": 38,
       "angle": -180,
@@ -113,13 +113,14 @@
     }
   ],
   "bounds": [
-    39, -43,
-    30.5, -99,
-    70.5, -46,
-    175.5, -1,
-    70.5, 45,
-    30.5, 98,
-    39, 42,
-    -175.5, 0
+    -182, 0,
+    39, -53,
+    30, -99.5,
+    67, -41,
+    175, 0,
+    67, 41,
+    30, 99.5,
+    39, 53,
+    -182, -0
   ]
 }
