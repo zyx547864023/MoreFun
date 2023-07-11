@@ -1,0 +1,18 @@
+{
+	"id":"electromagnetism_shot",
+	"specClass":"projectile",
+	"onHitEffect":"real_combat.weapons.RC_ElectromagnetismOnHitEffect",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":240.0,
+	"width":7.5,
+	"fadeTime":0.3,
+	"fringeColor":[255,255,255,255],
+	"coreColor":[255,255,255,220],
+	"hitGlowRadius":100,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}
+}

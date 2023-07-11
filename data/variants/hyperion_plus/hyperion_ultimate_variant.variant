@@ -4,7 +4,7 @@
   "displayName": "New Variant",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxVents": 6,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -18,24 +18,22 @@
       "mode": "LINKED",
       "weapons": {
         "WS0001": "phasebeam_sun",
-        "WS0002": "phasebeam_ice"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
+        "WS0002": "phasebeam_ice",
         "WS0003": "ioncannon_goodlook",
-        "WS0004": "ioncannon_goodlook"
+        "WS0004": "ioncannon_goodlook",
+        "WS0005": "dragon_head",
+        "WS0006": "dragon_head"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0005": "railgun_goodlook",
-        "WS0006": "railgun_goodlook"
-      }
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
     },
     {
       "autofire": false,

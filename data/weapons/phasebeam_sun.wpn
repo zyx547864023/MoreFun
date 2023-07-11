@@ -3,7 +3,7 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "MEDIUM",
-  "beamEffect": "real_combat.combat.RC_BeamCrossEffect",
+  "beamEffect": "real_combat.weapons.RC_BeamCrossEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/weapons/graviton_beam_turret_base_sun.png",
