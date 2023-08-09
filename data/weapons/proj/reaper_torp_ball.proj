@@ -2,7 +2,7 @@
 	"id":"reaper_torp_ball",
 	"specClass":"missile",
 	"missileType":"MISSILE",
-	"onHitEffect":"real_combat.combat.RC_MonsterBallOnHitEffect",
+	"onHitEffect":"real_combat.weapons.RC_MonsterBallOnHitEffect",
 	"sprite":"graphics/missiles/shuttle.png",
 	"size":[18,29],	
 	"center":[9,15],

@@ -1,0 +1,42 @@
+{
+  "hullName": "Spy",
+  "hullId": "RC_spy",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/RC/RC_spy.png",
+  "style": "LOW_TECH",
+  "height": 24,
+  "width": 25,
+  "center": [12.5, 11.5],
+  "collisionRadius": 12,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 12,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [8, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10.5, -0.5],
+      "length": 20.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    6, 0.5,
+    -4, 6.5,
+    -10, -0,
+    -10, 0,
+    -4, -5.5
+  ]
+}

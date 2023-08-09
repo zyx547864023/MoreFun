@@ -96,7 +96,7 @@
   ],
   "engineSlots": [
     {
-      "location": [-46, 28.5],
+      "location": [-64, 24.5],
       "length": 90.5,
       "width": 38,
       "angle": 180,
@@ -104,7 +104,7 @@
       "style": "LOW_TECH"
     },
     {
-      "location": [-46, -28.5],
+      "location": [-64, -24.5],
       "length": 90.5,
       "width": 38,
       "angle": -180,

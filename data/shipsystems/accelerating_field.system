@@ -1,0 +1,14 @@
+{
+	"id":"accelerating_field",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"real_combat.shipsystems.scripts.ai.RC_AcceleratingFieldAI",
+	"statsScript":"real_combat.shipsystems.scripts.RC_AcceleratingField",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

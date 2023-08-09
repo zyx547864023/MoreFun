@@ -24,8 +24,8 @@
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "HARDPOINT",
-      "arc": 10,
-      "angle": -2,
+      "arc": 5,
+      "angle": -3,
       "locations": [9, 29]
     },
     {
@@ -33,7 +33,7 @@
       "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "HARDPOINT",
-      "arc": 10,
+      "arc": 5,
       "angle": 3,
       "locations": [9, -29]
     },
@@ -76,41 +76,41 @@
   ],
   "engineSlots": [
     {
-      "location": [-28, 26],
-      "length": 64,
-      "width": 12,
+      "location": [-25, 26.5],
+      "length": 50.5,
+      "width": 8,
       "angle": 180,
-      "contrailSize": 64,
+      "contrailSize": 8,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-28, -26],
-      "length": 64,
-      "width": 12,
+      "location": [-25, -26.5],
+      "length": 50.5,
+      "width": 8,
       "angle": -180,
-      "contrailSize": 64,
+      "contrailSize": 8,
       "style": "HIGH_TECH"
     },
     {
       "location": [-34.5, 10.5],
-      "length": 67,
-      "width": 16,
+      "length": 57.5,
+      "width": 9,
       "angle": 180,
-      "contrailSize": 16,
+      "contrailSize": 9,
       "style": "HIGH_TECH"
     },
     {
       "location": [-34.5, -10.5],
-      "length": 67,
-      "width": 16,
+      "length": 57.5,
+      "width": 9,
       "angle": -180,
-      "contrailSize": 16,
+      "contrailSize": 9,
       "style": "HIGH_TECH"
     },
     {
       "location": [-14.5, 38.5],
       "length": 12,
-      "width": 4,
+      "width": 3,
       "angle": 177,
       "contrailSize": 128,
       "style": "HIGH_TECH"
@@ -118,7 +118,7 @@
     {
       "location": [-14.5, -38.5],
       "length": 12,
-      "width": 4,
+      "width": 3,
       "angle": -177,
       "contrailSize": 128,
       "style": "HIGH_TECH"
@@ -126,7 +126,7 @@
     {
       "location": [-5.5, 44.5],
       "length": 12,
-      "width": 4,
+      "width": 3,
       "angle": 177,
       "contrailSize": 128,
       "style": "HIGH_TECH"
@@ -134,7 +134,7 @@
     {
       "location": [-5.5, -44.5],
       "length": 12,
-      "width": 4,
+      "width": 3,
       "angle": -177,
       "contrailSize": 128,
       "style": "HIGH_TECH"

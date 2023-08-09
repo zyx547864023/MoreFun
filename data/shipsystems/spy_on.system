@@ -1,0 +1,14 @@
+{
+	"id":"spy_on",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"real_combat.shipsystems.scripts.ai.RC_SpyOnAI",
+	"statsScript":"real_combat.shipsystems.scripts.RC_SpyOn",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

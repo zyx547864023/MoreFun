@@ -1,0 +1,148 @@
+{
+  "hullName": "RC_lancer",
+  "hullId": "RC_lancer",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/RC/8F62A4FD449EE8976A00993555226D88.png",
+  "style": "HIGH_TECH",
+  "height": 289,
+  "width": 186,
+  "center": [93, 124.5],
+  "collisionRadius": 175.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 169.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0004": "lightsaber",
+    "WS0005": "lightsaber"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 45,
+      "locations": [-21, 25.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -46.5,
+      "locations": [-21.5, -25]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [10, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [136, 34.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [136, -34.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [109, 41.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [109, -41.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-71, 0.5],
+      "length": 175.5,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "CUSTOM",
+      "styleId": "RC_TECH"
+    },
+    {
+      "location": [-72, 10],
+      "length": 136.5,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "RC_TECH"
+    },
+    {
+      "location": [-72, -10],
+      "length": 136.5,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "RC_TECH"
+    },
+    {
+      "location": [-73.5, -45.5],
+      "length": 145.5,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "RC_TECH"
+    },
+    {
+      "location": [-73.5, 45.5],
+      "length": 145.5,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "RC_TECH"
+    }
+  ],
+  "bounds": [
+    -74, 32,
+    -122.5, 93,
+    -21, 59,
+    -11, 40,
+    82.5, 40.5,
+    82, 25.5,
+    22, 14,
+    65.5, 1.5,
+    65.5, -1.5,
+    22, -14,
+    82, -25.5,
+    82.5, -40.5,
+    -11, -40,
+    -21, -59,
+    -122.5, -93,
+    -74, -32
+  ]
+}

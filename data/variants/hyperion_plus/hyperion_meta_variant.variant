@@ -1,7 +1,7 @@
 {
   "variantId": "hyperion_meta_variant",
   "hullId": "hyperion_meta",
-  "displayName": "New Variant",
+  "displayName": "默认",
   "goalVariant": false,
   "fluxCapacitors": 9,
   "fluxVents": 0,

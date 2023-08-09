@@ -1,7 +1,7 @@
 {
   "variantId": "RC_fuckass_variant",
   "hullId": "RC_fuckass",
-  "displayName": "New Variant",
+  "displayName": "默认",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 7,

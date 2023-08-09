@@ -1,0 +1,23 @@
+{
+  "variantId": "RC_monitor_variant",
+  "hullId": "RC_monitor",
+  "displayName": "默认",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "flak",
+        "WS 002": "guardian"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

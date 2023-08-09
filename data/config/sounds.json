@@ -1,5 +1,10 @@
 {
 	"trans_am":[
         {"file":"sounds/trans_am.ogg","pitch":1,"volume":1},
+		
+    ],
+	"high_energy_ahead":[
+        {"file":"sounds/high_energy_ahead.ogg","pitch":1,"volume":1},
+		
     ],
 }

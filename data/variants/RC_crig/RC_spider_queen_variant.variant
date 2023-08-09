@@ -1,0 +1,51 @@
+{
+  "variantId": "RC_spider_queen_variant",
+  "hullId": "RC_spider_queen",
+  "displayName": "默认",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 35,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_deck_crew",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "WS0001": "RC_spider_queen_feet3_variant"
+    },
+    {
+      "WS0002": "RC_spider_queen_feet4_variant"
+    },
+    {
+      "WS0003": "RC_spider_queen_feet5_variant"
+    },
+    {
+      "WS0004": "RC_spider_queen_feet6_variant"
+    },
+    {
+      "WS0007": "RC_spider_queen_head_variant"
+    },
+    {
+      "WS0008": "RC_spider_queen_feet1_variant"
+    },
+    {
+      "WS0009": "RC_spider_queen_feet2_variant"
+    },
+    {
+      "WS0010": "RC_spider_queen_feet7_variant"
+    },
+    {
+      "WS0011": "RC_spider_queen_feet8_variant"
+    },
+    {
+      "WS0012": "RC_spider_queen_engine_variant"
+    }
+  ],
+  "wings": [
+    "thunder_wing",
+    "thunder_wing"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "hullName": "短机械臂模块",
+  "hullId": "RC_spider_queen_feet4",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/RC/RC_spider_queen_feet4.png",
+  "style": "LOW_TECH",
+  "height": 182,
+  "width": 271,
+  "center": [141, 111],
+  "collisionRadius": 153.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 151.5,
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    66, -127,
+    -51, 36.5,
+    -13.5, 51
+  ]
+}

@@ -11,7 +11,7 @@
 		"contrailMinSeg":5, # min segment length, in pixels
 		"contrailMaxSpeedMult":0.1f,
 		"contrailAngularVelocityMult":0f,
-		"contrailColor":[0,191,255,75],
+		"contrailColor":[0,191,255,0],
 		"type":"GLOW", # GLOW or SMOKE; additive or regular blend mode
 						
 		"glowSprite":"graphics/fx/RC_engineglow.png",
@@ -19,7 +19,7 @@
 		"omegaMode":true,
 		"glowSizeMult":1,
 		"glowAlternateColor":[0,191,255,255],
-		"engineColor":[0,191,255,255],
+		"engineColor":[0,191,255,0],
 	}
 }
 

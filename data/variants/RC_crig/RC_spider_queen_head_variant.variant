@@ -1,0 +1,17 @@
+{
+  "variantId": "RC_spider_queen_head_variant",
+  "hullId": "RC_spider_queen_head",
+  "displayName": "默认",
+  "goalVariant": false,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": [
+    "thunder_wing",
+    "thunder_wing"
+  ]
+}

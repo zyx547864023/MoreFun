@@ -5,6 +5,7 @@
 		"RC_WeaponsEveryFrameCombatPlugin":"real_combat.combat.RC_WeaponsEveryFrameCombatPlugin",
 		"RC_MonsterBallEveryFrameCombatPlugin":"real_combat.combat.RC_MonsterBallEveryFrameCombatPlugin",
 		"RC_QEEveryFrameCombatPlugin":"real_combat.combat.RC_QEEveryFrameCombatPlugin",
+		"RC_SmartAIEveryFrameCombatPlugin":"real_combat.combat.RC_SmartAIEveryFrameCombatPlugin",
 	},
 	"graphics":
 	{

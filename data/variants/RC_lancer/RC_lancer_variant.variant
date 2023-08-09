@@ -1,0 +1,30 @@
+{
+  "variantId": "RC_lancer_variant",
+  "hullId": "RC_lancer",
+  "displayName": "默认",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "plasma",
+        "WS0002": "annihilatorpod",
+        "WS0003": "annihilatorpod",
+        "WS0004": "lightsaber",
+        "WS0005": "lightsaber",
+        "WS0006": "sabot",
+        "WS0007": "sabot"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,12 +1,30 @@
 name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,c/s,c/f,f/s,f/f,crew/s,crew/f,hints,tags,rarity,breakProb,minPieces,maxPieces,travel drive,number
 #诡术妖机,hyperion_plus,先进炮艇,扩展纪元,mine_strike_plus,15,2500,250,8000,6250,500,65,,120,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,95000,8,40,120,0.25,15,15,,,,,,,,,0.5,0.75,2,2,,202
 核心海波龙,hyperion_plus,先进炮艇,扩展纪元,trinity_force,15,2500,400,8000,6250,500,65,,120,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,95000,8,40,120,0.25,15,15,,,,,,,"SHIP_WITH_MODULES, HIDE_IN_CODEX",,0.5,0.75,2,2,,202
-RC装甲TYPE-E,hyperion_core,先进炮艇,扩展纪元,boomerang,15,4000,250,8000,6250,500,105,,110,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,95000,8,40,120,0.25,15,15,,,,,,,"SHIP_WITH_MODULES, HIDE_IN_CODEX",,0.5,0.75,2,2,,202
-原型海波龙,hyperion_meta,先进炮艇,扩展纪元,phaseteleporter_plus,15,2500,250,8000,6250,500,70,,120,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,100000,8,40,120,0.25,15,15,,,,,,,,"rare_bp, hist3t",0.5,0.75,2,2,,202
-究极海波龙,hyperion_ultimate,究极炮艇,扩展纪元,combo,15,2500,250,8000,6250,500,70,,160,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,200000,8,40,120,0.25,15,15,,,,,,,HIDE_IN_CODEX,,0.5,0.75,2,2,,202
+原型海波龙,hyperion_meta,先进炮艇,扩展纪元,phaseteleporter_plus,15,2500,250,8000,6250,500,70,,120,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,100000,8,40,120,0.25,15,15,,,,,,,,"rare_bp, hist3t, merc",0.5,0.75,2,2,,202
+究极海波龙,hyperion_ultimate,究极炮艇,扩展纪元,combo,30,2500,250,8000,6250,500,70,,160,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,200000,8,40,120,0.25,30,30,,,,,,,HIDE_IN_CODEX,,0.5,0.75,2,2,,202
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-撅腚,RC_fuckass,强袭登陆艇,核心纪元,burndrive,6,3500,400,2250,1833,110,55,,100,60,60,30,45,400,FRONT,,90,0.4,0.8,,,10,250,50,80,2,40,9,40000,5,15,360,0.25,5,5,,,,,50,125,TRANSPORT,"pirate_bp,pirates",,0.5,2,3,,307
+撅腚,RC_fuckass,强袭登陆艇,核心纪元,burndrive,20,3500,400,2250,1833,110,55,,100,60,60,30,45,400,FRONT,,90,0.4,0.8,,,10,250,50,80,2,40,9,40000,5,15,360,0.25,20,20,,,,,50,125,TRANSPORT,"pirate_bp,pirates",0.5,0.5,2,3,,307
 ,RC_crig,打捞维修平台,核心纪元,asteroid_arm,3,2000,200,1000,1667,100,30,2,50,30,20,25,15,300,FRONT,,150,0.5,1,,,20,2,0,0,2,0,8,40000,5,20,360,0.25,3,3,,,,,,,,base_bp,,0.75,2,3,,312
 工蛛,RC_drone_borer,,,,,200,25,200,,100,,,100,200,200,180,360,5,PHASE,phasecloak,90,,,0.01,0.02,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,1.5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-布鲁艾斯,blue_eyes,先进炮艇,扩展纪元,boomerang,15,4000,250,8000,6250,500,105,,110,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,15,10,15,1,15,10,95000,8,40,120,0.25,15,15,,,,,,,"SHIP_WITH_MODULES, HIDE_IN_CODEX",,0.5,0.75,2,2,,202
+监控者,RC_monitor,侦查护卫舰,核心纪元,spy_on,5,1500,175,4000,1500,120,30,2,90,120,100,60,120,200,OMNI,,360,0.5,0.8,,,15,30,30,20,1,20,10,25000,8,10,360,0.25,6,6,,,,,,,COMBAT,"rare_bp, hist2t, merc",,0.5,2,2,,214
+谍蛛,RC_spy,,,,,200,25,200,,100,,,100,200,200,180,360,5,PHASE,phasecloak,90,,,0.01,0.02,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,1.5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+布鲁艾斯,blue_eyes,幻想生物,扩展纪元,damper,15,4000,400,10000,6250,500,40,,110,175,150,50,100,400,OMNI,,360,0.6,0.6,,,5,15,10,15,1,15,10,95000,8,40,120,0.25,15,15,,,,,,,HIDE_IN_CODEX,,0.5,0.75,2,2,,202
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+枪骑兵,RC_lancer,高速巡洋舰,扩展纪元,microburn,20,5000,500,12000,6250,500,130,,110,175,150,50,100,300,FRONT,,300,0.6,0.6,,,5,20,10,15,1,15,10,100000,8,40,120,0.25,20,20,,,,,,,HIDE_IN_CODEX,,0.5,0.75,2,2,,202
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+蛛女皇,RC_spider_queen,打捞维修平台,核心纪元,asteroid_arm,40,20000,1000,5000,1667,400,100,6,35,10,10,15,5,850,OMNI,,360,0.5,0.8,,,2000,3000,1000,2000,15,30,8,500000,10,10,720,0.25,55,55,,,,,,,"SHIP_WITH_MODULES, HIDE_IN_CODEX","pirates,rare_bp, hist3t",,0.75,2,3,,312
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,RC_spider_queen_engine,引擎模块,,hulk_eater,1,15000,800,5000,3333,350,140,3,0,0,0,10,10,1000,OMNI,,150,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet1,长机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet2,长机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet7,长机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet8,长机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet3,短机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet4,短机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet5,短机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_feet6,短机械臂模块,,accelerating_field,1,5000,500,2500,2500,150,60,0,0,0,0,10,10,400,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,2,4,,2100
+,RC_spider_queen_head,传感器模块,,accelerating_field,1,6000,600,3500,8000,400,80,2,0,0,0,10,10,500,OMNI,,90,0.5,0.8,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","no_autofit, restricted",,1,4,8,,2100
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

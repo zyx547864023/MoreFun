@@ -1,0 +1,135 @@
+{
+  "hullName": "Monitor",
+  "hullId": "RC_monitor",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/RC/RC_monitor.png",
+  "style": "MIDLINE",
+  "height": 64,
+  "width": 110,
+  "center": [55, 30],
+  "collisionRadius": 85,
+  "shieldCenter": [-1, 0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fluxshunt"
+  ],
+  "builtInWings": [
+    "RC_spy_wing",
+    "RC_spy_wing"
+  ],
+  "builtInWeapons": {
+    "WS 001": "heavymg",
+    "WS 002": "guardian"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 80,
+      "locations": [3, 43]
+    },
+    {
+      "id": "WS 002",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -80,
+      "locations": [1, -34]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -5, 16.5,
+        8.5, 18
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-27, 45],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, 39],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, 33],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-28, 28],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-28, -27],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, -32],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-29, -38],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-27, -44],
+      "length": 24,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    5, 54,
+    33, 0,
+    4, -53,
+    -23, -46,
+    -26, -27,
+    -19, -24,
+    -18, 0,
+    -19, 23,
+    -27, 25,
+    -24, 46
+  ]
+}

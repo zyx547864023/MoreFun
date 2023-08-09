@@ -1,0 +1,14 @@
+{
+	"id":"hulk_eater",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"real_combat.shipsystems.scripts.ai.RC_HulkEaterAI",
+	"statsScript":"real_combat.shipsystems.scripts.RC_HulkEater",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

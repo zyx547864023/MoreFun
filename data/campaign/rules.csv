@@ -223,12 +223,94 @@ HailPlayer",,,
 !$entity.ignorePlayerCommRequests",$entity.ignorePlayerCommRequests = true,"""我猜您就是 $playername 舰长了。""雇佣兵指挥官沉稳的声音传来，""我的雇主很失望，因为你没有...呃...好好地重新考虑一下。""$heOrShe说出最后一个词时语气很怪，过了一会，你想起了自己和 Callisto Ibrahim 进行过的一次激烈谈话 —— 那时你拒绝交出她的旧船 —— 当时她在谈话中就用了 ""重新考虑"" 这个词。
 
 $HeOrShe就这么看着你，并在你摆出意识到了什么的表情时切断了通讯链接。",cutCommLinkNoText:继续,
+#参考,,,,,,
+#gaPZTriTachEncounter,BeginFleetEncounter,"$gaPZ_tritachyon score:1000
+!$gaPZ_encounteredAlready","$gaPZ_encounteredAlready = true
+FleetDesc
+HailPlayer",,,
+#gaPZTriTachEncounterComm,OpenCommLink,"$entity.gaPZ_tritachyon score:1000
+!$entity.ignorePlayerCommRequests
+ZigguratCMD updateData","$entity.ignorePlayerCommRequests = true
+FireBest GAPZTTInitial",,,
+#gaPZTriTachEncounterStandard,GAPZTTInitial,,FireAll GAPZTTHub,"""你好，舰长，"" 这位速子科技 $rank 清脆地说道。""你当前持有 速子科技 公司名下的财产，我受命前来将其取回。请立刻将名为 TTS Xenorphica 的 通灵塔-级 舰船转交给我。""
+
+$HeOrShe目不转睛地瞪着你，等待你的回复。",,
+#gaPZTriTachEncounterNoZig,GAPZTTInitial,!$entity.hasZiggurat,FireBest GAPZTTInitialCont,"""你好，舰长，"" 这位速子科技 $rank 清脆地说道。""远程传感器最近探测到你的舰队中有一艘名为 TTS Xenorphica 的 通灵塔-级 舰船，该舰是速子科技公司名下的财产。""$HeOrShe低下头去，看着屏幕读道 ""速子科技 公司在此声明，该公司认为，为了取回其财产，其采取的一切必要手段都是正当，合法的，包括动用军事力量，雇用佣兵等。""",,
+#gaPZTriTachEncounterOnlyZig,GAPZTTInitial,$entity.hasOnlyZiggurat,FireBest GAPZTTInitialCont,"""你好，舰长，"" 这位速子科技 $rank 清脆地说道。""你当前持有速子科技公司名下的财产。""$HisOrHer低下头去，看着屏幕读道 ""速子科技公司在此声明，我公司认为，为了取回其财产，其采取的一切必要手段都是正当，合法的，包括动用军事力量，雇用佣兵等。""",,
+#gaPZTriTachEncounterInitialCont,GAPZTTInitialCont,,"MakeOtherFleetNonHostile gaPZ true
+MakeOtherFleetImportant gaPZ false
+MakeOtherFleetGoAway true","这位速子科技 $rank 毫无感情地盯着你。""请将此视作一次警告。""
+通讯链接被切断了。屏幕上出现了旋转的 速子科技 标志，同时一个合成的声音鼓励你提交关于用户体验的反馈。",cutCommLinkNoText:继续,
+#GAPZTTHub1,GAPZTTHub,!$gaPZ_ttHubSal,,,"gaPZ_ttHubSal:""你没听说过打捞权吗？""",
+#GAPZTTHub2,GAPZTTHub,,,,"gaPZ_ttHubPry:""那你恐怕得从我的尸体上跨过去。""",
+#GAPZTTHub3,GAPZTTHub,,,,"gaPZ_ttHubThreat:""霸主 要是看到这个违反条约的东西到处乱飞会怎么想？""",
+#GAPZTTHub4,GAPZTTHub,,,,"gaPZ_ttHubPay:""报酬呢？没有发现者补贴吗？""",
+#GAPZTTHub5,GAPZTTHub,,,,"gaPZ_ttHubAccept:""我会立即传输指挥协议。""(接受)",
+#gaPZ_ttHubSal,DialogOptionSelected,$option == gaPZ_ttHubSal,"$gaPZ_ttHubSal = true 0
+FireAll GAPZTTHub","""我们当然知道打捞权，舰长，""$heOrShe咬牙切齿地说道，""但是我司认为这次是例外情况。我们在那艘船上倾注了太多的心血，也期望从这次投资中获利。""",,
+#gaPZ_ttHubPryStronger,DialogOptionSelected,"$option == gaPZ_ttHubPry
+$entity.relativeStrength >= 0",,"""求之不得，"" 这位速子科技 $rank 怀着邪恶的满足感说道。通讯被切断了。",cutCommLinkNoText:继续,
+#gaPZ_ttHubPryWeaker,DialogOptionSelected,"$option == gaPZ_ttHubPry
+$entity.relativeStrength < 0","AdjustRep tritachyon VENGEFUL -75
+MakeOtherFleetNonHostile gaPZ true
+MakeOtherFleetImportant gaPZ false
+MakeOtherFleetGoAway true","这位速子科技 $rank 不爽地咽了咽口水，说 ""我看没有那个必要。我们是做生意的，不是开屠宰场的。""
+
+$HeOrShe顿了顿，似乎是在思考措辞，才再次开口。""你犯了个可怕的错误，舰长，""$heOrShe说道。""如果真的有那么一天的话 —— 给你提个醒：速子科技 公司的规模比你大得多，比任何独立舰队都大。它比所有人都强，因为它的实力比单独的组成部分的总和还要强，包括人类的和非人类的。""
+
+""你赢不了的。"" 这位速子科技 $rank 就这样切断了通讯并命令$hisOrHer脱离战斗。",cutCommLinkNoText:继续,
+#gaPZ_ttHubThreat,DialogOptionSelected,$option == gaPZ_ttHubThreat,,"这位速子科技 $rank 似乎有些措不及防，停下来咽了咽口水。
+
+""我不...呃。速子科技公司不承认星历 194 年签署的 Crom Cruach 条约中列出的任何责任与罪行，""$heOrShe机械地说。""这次谈话不能肯定或消除任何对于你方持有 速子科技 财产的怀疑。""
+
+一声轻咳。""我再说一遍我的要求：归还 TTS Xenorphica。""",gaPZ_ttHubThreat1:威胁说让霸主拿到 通灵塔-级 的船体,
+#gaPZ_ttHubThreat1,DialogOptionSelected,$option == gaPZ_ttHubThreat1,"AdjustRep tritachyon INHOSPITABLE -25
+MakeOtherFleetNonHostile gaPZ true
+MakeOtherFleetImportant gaPZ false
+MakeOtherFleetGoAway true","你认为，这艘船上使用的科技明显违反了 Crom Cruach 条约，那份终结了第二次 AI 战争的条约。当然，前提是这艘船确实是 速子科技 所制造的。
+
+假如 霸主 的 科技标准部 从你那收到了 速子科技 的秘密实验场，也就是所谓的 ""阿尔法研究站"" 的调查数据。
+
+现在还只是假如。
+
+""我们会再见的，"" 这位 $rank 嘟哝道。通讯被切断了，只剩下一个 速子科技 标志。",cutCommLinkNoText:继续,
+#gaPZ_ttHubPay,DialogOptionSelected,$option == gaPZ_ttHubPay,Highlight $entity.ttZigBuyPrice,"这位速子科技 $rank 笑了起来，""总算谈到生意了，舰长。""
+
+$HeOrShe迅速查看了一下TriPad，说道 ""我很乐意提供 $entity.ttZigBuyPrice 星币，作为协助回收 TTS Xenorphica 过程中的一笔'咨询费'。""","gaPZ_ttHubPayAccept:接受
+gaPZ_ttHubPayDecline:拒绝",
+#gaPZ_ttHubPayDecline,DialogOptionSelected,$option == gaPZ_ttHubPayDecline,FireAll GAPZTTHub,,,
+#gaPZ_ttHubPayAccept,DialogOptionSelected,$option == gaPZ_ttHubPayAccept,"AdjustRep tritachyon COOPERATIVE 15
+AddCredits $entity.ttZigBuyPrice
+RemoveShip $entity.zigguratMember
+AddShipToOtherFleet $entity.zigguratMember
+MakeOtherFleetNonHostile gaPZ true
+MakeOtherFleetImportant gaPZ false
+MakeOtherFleetGoAway true","你示意同意以后，这位 速子科技 军官看起来欣喜若狂。$HeOrShe把这笔巨款转到了你的账户里。作为交换，你交出了 通灵塔-级 船体的指挥代码。
+
+$Rank $PersonName 目光越过$hisOrHer的 TriPad 看向你，""当然，我们相信您会谨慎对待这件事情，"" 然后露出一个轻浮的微笑：""和您做生意真是愉快，舰长。""",cutCommLinkNoText:继续,
+#gaPZ_ttHubAccept,DialogOptionSelected,$option == gaPZ_ttHubAccept,"Highlight $entity.ttZigLowBuyPrice
+AdjustRep tritachyon COOPERATIVE 30
+AddCredits $entity.ttZigLowBuyPrice
+RemoveShip $entity.zigguratMember
+AddShipToOtherFleet $entity.zigguratMember
+MakeOtherFleetNonHostile gaPZ true
+MakeOtherFleetImportant gaPZ false
+MakeOtherFleetGoAway true","这位速子科技 $rank 看起来吃了一惊，似乎没有料到你会这么爽快地答应。
+
+""我，嗯，这也是理所当然的。速子科技 公司感谢您对此事的合作。当然，我们会为回收公司财产安排一笔象征性的费用 - 啊，数额是 $entity.ttZigLowBuyPrice 星币。""$HeOrShe的目光越过 TriPad 看向你，""当然，我们相信您会谨慎对待这件事情。""
+
+指挥权交接过程进行得很顺利。",cutCommLinkNoText:继续,
 ,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+RC_ChangeHyperionUltimateEncounter,BeginFleetEncounter,$RC_fleetTalk score:1000,"FleetDesc
+HailPlayer",,,
+RC_ChangeHyperionUltimateEncounterComm,OpenCommLink,"$entity.RC_fleetTalk score:1000
+!$entity.ignorePlayerCommRequests","$entity.ignorePlayerCommRequests = true
+FireBest RC_ChangeHyperionUltimateInitial",,,
+RC_ChangeHyperionUltimateEncounterStandard,RC_ChangeHyperionUltimateInitial,,FireAll RC_ChangeHyperionUltimateHub,"""你好，舰长，"" 这位 $faction $rank 清脆地说道。""我受命前来将其取回。请立刻将 究极海波龙-级 舰船转交给我。""
+
+$HeOrShe目不转睛地瞪着你，等待你的回复。",,
+RC_ChangeHyperionUltimateHub1,RC_ChangeHyperionUltimateHub,,,,"RC_ChangeHyperionUltimateHubPry:""那你恐怕得从我的尸体上跨过去。""",
+RC_ChangeHyperionUltimateHubPryStronger,DialogOptionSelected,$option == RC_ChangeHyperionUltimateHubPry,,"""求之不得，"" 这位 $faction $rank 怀着邪恶的满足感说道。通讯被切断了。",cutCommLinkNoText:继续,
 ,,,,,,
 ,,,,,,
 ,,,,,,
