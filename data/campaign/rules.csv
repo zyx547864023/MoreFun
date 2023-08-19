@@ -79,7 +79,7 @@ Call $global.RC_ChangeHyperionPlusComplete_ref changeAstral",在不算长久的�
 #RC_ChangeHyperionPlusCompleteChangeOdyssey,DialogOptionSelected,$option == RC_ChangeHyperionPlusComplete_changeOdyssey,"ShowPersonVisual
 Call $global.RC_ChangeHyperionPlusComplete_ref changeOdyssey",在不算长久的等待之后，模块被更换完毕。,cutCommLink:切断通讯链接,
 ,,,,,,
-RC_ChangeHyperionPlusComplete,PickGreeting,"$global.RC_ChangeHyperionPlusComplete_returnHere score:1000
+RC_ChangeHyperionPlusComplete,PickGreeting,"$global.RC_ChangeHyperionPlusComplete_returnHere score:1002
 $id == MeiDo
 $global.RC_ChangeHyperionPlus_completed",ShowPersonVisual,"""欢迎光临舰长大人，您来找我是想要更换模块吗？""","RC_ChangeHyperionPlusComplete_showOption:是的
 cutCommLink:啥也不干",
@@ -128,7 +128,7 @@ RC_ChangeHyperionShowOption2,DialogOptionSelected,$option == RC_ChangeHyperionSh
 RC_ChangeHyperionShowOption3,DialogOptionSelected,$option == RC_ChangeHyperionShowOption3,Call $global.RC_ChangeHyperionPlusComplete_ref showOption3,,,
 RC_ChangeHyperionShowOption4,DialogOptionSelected,$option == RC_ChangeHyperionShowOption4,Call $global.RC_ChangeHyperionPlusComplete_ref showOption4,,,
 ,,,,,,
-RC_ChangeHyperionPlus,PickGreeting,"$global.RC_ChangeHyperionPlus_returnHere score:1000
+RC_ChangeHyperionPlus,PickGreeting,"$global.RC_ChangeHyperionPlus_returnHere score:1001
 $global.RC_ChangeHyperionUltimate_completed 
 $id == MeiDo
 !$global.RC_ChangeHyperionPlus_completed","ShowPersonVisual
@@ -163,9 +163,9 @@ RC_ChangeHyperionUltimateWait,DialogOptionSelected,"$option == RC_ChangeHyperion
 cutCommLink:不了",
 RC_ChangeHyperionUltimateOfferTextContact,DialogOptionSelected,"$option == RC_ChangeHyperionUltimate_start
 ","$missionId = RC_ChangeHyperionUltimate
-SetTextHighlights $RC_ChangeHyperionUltimate_fury $RC_ChangeHyperionUltimate_odyssey $RC_ChangeHyperionUltimate_scarab $RC_ChangeHyperionUltimate_afflictor $RC_ChangeHyperionUltimate_harbinger $RC_ChangeHyperionUltimate_hyperionMeta $RC_ChangeHyperionUltimate_a $RC_ChangeHyperionUltimate_cost $RC_ChangeHyperionUltimate_days","这名科研人员将手中的 TriPad 递了过来。
+SetTextHighlights $RC_ChangeHyperionUltimate_shrike $RC_ChangeHyperionUltimate_fury $RC_ChangeHyperionUltimate_odyssey $RC_ChangeHyperionUltimate_scarab $RC_ChangeHyperionUltimate_afflictor $RC_ChangeHyperionUltimate_harbinger $RC_ChangeHyperionUltimate_hyperionMeta $RC_ChangeHyperionUltimate_a $RC_ChangeHyperionUltimate_cost $RC_ChangeHyperionUltimate_days","这名科研人员将手中的 TriPad 递了过来。
 
-""改造需要一艘 $RC_ChangeHyperionUltimate_fury 级巡洋舰或 $RC_ChangeHyperionUltimate_odyssey 级战列巡洋舰、一艘 $RC_ChangeHyperionUltimate_scarab 级重型护卫舰、一艘 $RC_ChangeHyperionUltimate_afflictor 级相位护卫舰、一艘 $RC_ChangeHyperionUltimate_harbinger 级相位驱逐舰作为材料，当然还有最重要的 $RC_ChangeHyperionUltimate_hyperionMeta 级先进炮艇以及整合系统所需的一颗 $RC_ChangeHyperionUltimate_a，改装费用是 $RC_ChangeHyperionUltimate_cost 星币，改造将在 $RC_ChangeHyperionUltimate_days 天后完成，如果有相同的材料会取舰船列表里的第一艘，请注意。""","RC_ChangeHyperionUltimate_change:搞起
+""改造需要一艘 $RC_ChangeHyperionUltimate_shrike 级轻型驱逐舰或 $RC_ChangeHyperionUltimate_fury 级巡洋舰或 $RC_ChangeHyperionUltimate_odyssey 级战列巡洋舰、一艘 $RC_ChangeHyperionUltimate_scarab 级重型护卫舰、一艘 $RC_ChangeHyperionUltimate_afflictor 级相位护卫舰、一艘 $RC_ChangeHyperionUltimate_harbinger 级相位驱逐舰作为材料，当然还有最重要的 $RC_ChangeHyperionUltimate_hyperionMeta 级先进炮艇以及整合系统所需的一颗 $RC_ChangeHyperionUltimate_a，改装费用是 $RC_ChangeHyperionUltimate_cost 星币，改造将在 $RC_ChangeHyperionUltimate_days 天后完成，如果有相同的材料会取舰船列表里的第一艘，请注意。""","RC_ChangeHyperionUltimate_change:搞起
 cutCommLink:不了",
 RC_ChangeHyperionUltimateChange,DialogOptionSelected,$option == RC_ChangeHyperionUltimate_change,"ShowPersonVisual
 Call $global.RC_ChangeHyperionUltimate_ref change
@@ -301,9 +301,9 @@ MakeOtherFleetGoAway true","这位速子科技 $rank 看起来吃了一惊，似
 
 指挥权交接过程进行得很顺利。",cutCommLinkNoText:继续,
 ,,,,,,
-RC_ChangeHyperionUltimateEncounter,BeginFleetEncounter,$RC_fleetTalk score:1000,"FleetDesc
+RC_ChangeHyperionUltimateEncounter,BeginFleetEncounter,$RC_fleetTalk score:1001,"FleetDesc
 HailPlayer",,,
-RC_ChangeHyperionUltimateEncounterComm,OpenCommLink,"$entity.RC_fleetTalk score:1000
+RC_ChangeHyperionUltimateEncounterComm,OpenCommLink,"$entity.RC_fleetTalk score:1001
 !$entity.ignorePlayerCommRequests","$entity.ignorePlayerCommRequests = true
 FireBest RC_ChangeHyperionUltimateInitial",,,
 RC_ChangeHyperionUltimateEncounterStandard,RC_ChangeHyperionUltimateInitial,,FireAll RC_ChangeHyperionUltimateHub,"""你好，舰长，"" 这位 $faction $rank 清脆地说道。""我受命前来将其取回。请立刻将 究极海波龙-级 舰船转交给我。""
@@ -312,8 +312,77 @@ $HeOrShe目不转睛地瞪着你，等待你的回复。",,
 RC_ChangeHyperionUltimateHub1,RC_ChangeHyperionUltimateHub,,,,"RC_ChangeHyperionUltimateHubPry:""那你恐怕得从我的尸体上跨过去。""",
 RC_ChangeHyperionUltimateHubPryStronger,DialogOptionSelected,$option == RC_ChangeHyperionUltimateHubPry,,"""求之不得，"" 这位 $faction $rank 怀着邪恶的满足感说道。通讯被切断了。",cutCommLinkNoText:继续,
 ,,,,,,
+# buy ship mission,,,"
+",,,
+#nex_bShipBlurb_generic,nex_bShip_blurb,,,"""我注意到你舰队里有些不错的舰船，我有购买其中一艘的想法。""",,
+#nex_bShipOfferOption_generic,nex_bShip_option,,,,nex_bShip_start:与对方谈论交易舰船的事项,
+#nex_bShipBlurbBar_generic,nex_bShip_blurbBar,,,"一个衣着俗艳的人接近了你，询问你是否是{""刚才靠港的那支舰队""}的主人。",,
+#nex_bShipOfferOptionBar_generic,nex_bShip_optionBar,,,,nex_bShip_start:谦虚地自我介绍以取悦那俗气的人,
+#nex_bShipOfferInit,DialogOptionSelected,$option == nex_bShip_start,"$missionId = nex_bShip
+FireAll Nex_BShip_PreShipPick",,,
+#nex_bShipOfferTextBar,Nex_BShip_PreShipPick,,FireBest Nex_BShip_PreShipPickText,,,
+#nex_bShipOfferTextBar_generic,Nex_BShip_PreShipPickText,$nex_bShip_barEvent,,"当你解释说你确实拥有对方提到的舰队时，$nex_bShip_manOrWoman}顿时精神焕发。""太好了!}看，我是舰船收藏家，越不寻常的船我越感兴趣，即使船身有战损也没关系，那也是它魅力的一部分。""
+
+""碰巧的是，现在我正打算扩充我小小的收藏。""",,
+#nex_bShipOfferTextContact_generic,Nex_BShip_PreShipPickText,!$nex_bShip_barEvent,,"""太棒了，我愿意为符合要求的船腾出空间。""",,
+#nex_bShipOfferTextBar_military,Nex_BShip_PreShipPickText,"$nex_bShip_barEvent
+$nex_bShip_variation == MILITARY score:5",,"当你解释说你确实拥有对方提到的舰队时，$nex_bShip_manOrWoman}顿时精神焕发。""太好了!}看，我正为{$theFaction}采购舰船，他们打算买一些平时没机会弄到的舰船，你的一些船看起来正好符合他们的需求。即使船身有轻微破损也没关系，他们自己能搞定的。""",,
+#nex_bShipOfferTextBar_militaryOfficial,Nex_BShip_PreShipPickText,"$nex_bShip_barEvent
+$nex_bShip_variation == MILITARY score:5
+$nex_bShip_isBaseOfficial score:5",,"当你解释说你确实拥有对方提到的舰队时，$nex_bShip_manOrWoman}向你伸出了手。""很好，舰长。我是{$theFaction}当局在{$marketName}的代表。我们需要像你舰队那样的好船，我们愿意给予相应的报酬。""",,
+#nex_bShipOfferTextContact_military,Nex_BShip_PreShipPickText,"!$nex_bShip_barEvent
+$nex_bShip_variation == MILITARY score:5",,"""太好了。我们的舰队需要一些新船，你们肯定有一些这样的存货。包括那些{$theFaction}一般弄不到的。""",,
+#nex_bShipOfferShowRules,Nex_BShip_PreShipPick,,Call $nex_bShip_ref showRules,,,
+#nex_bShipOfferOptionsNonBar,Nex_BShip_PreShipPick,!$nex_bShip_barEvent,,,"nex_bShip_pickShip:提供一艘符合要求的舰船
+contact_decline:拒绝",
+#nex_bShipOfferOptionsBar,Nex_BShip_PreShipPick,$nex_bShip_barEvent,,,"nex_bShip_pickShip:提供一艘符合要求的舰船
+contact_declineBarNoContinue:拒绝",
+#nex_bShipSelected,DialogOptionSelected,"$option == nex_bShip_pickShip
+!$nex_bShip_barEvent",Call $nex_bShip_ref showPicker,,,
+#nex_bShipSelectedBar,DialogOptionSelected,"$option == nex_bShip_pickShip
+$nex_bShip_barEvent",Call $nex_bShip_ref showPicker,,,
+#nex_bShipSelectedInit,Nex_BShip_ShipPicked,,"Call $nex_bShip_ref updateData
+Call $nex_bShip_ref showShip
+FireBest Nex_BShip_ShipPickedText",,,
+#nex_bShipSelectedOptions,Nex_BShip_ShipPicked,!$nex_bShip_barEvent,"SetShortcut contact_decline ""ESCAPE""",,"nex_bShip_pickShip:提供另一艘舰船
+contact_accept:确认出售
+contact_decline:拒绝",
+#nex_bShipSelectedOptionsBar,Nex_BShip_ShipPicked,$nex_bShip_barEvent,"SetShortcut contact_declineBarNoContinue ""ESCAPE""",,"nex_bShip_pickShip:提供另一艘舰船
+contact_acceptBar:确认出售
+contact_declineBarNoContinue:拒绝",
+#nex_bShipSelectedText_generic,Nex_BShip_ShipPickedText,,Highlight $nex_bShip_price,"""啊，确实不错。""{$HeOrShe}检视着你传输到{$hisOrHer}TriPad中的参数，""我可以为此支付{$nex_bShip_price}星币。""",,
+#nex_bShipSelectedText_aristo,Nex_BShip_ShipPickedText,$voice == aristo,Highlight $nex_bShip_price,"""啊，确实不错。""{$HeOrShe}检视着你传输到{$hisOrHer}TriPad中的参数，""我可以为此支付{$nex_bShip_price}星币。""",,
+#nex_bShipSelectedText_military,Nex_BShip_ShipPickedText,$nex_bShip_variation == MILITARY score:5,Highlight $nex_bShip_price,"""值得一买。""{$HeOrShe}检视着你传输到{$hisOrHer}TriPad中的参数，""$TheFaction}会愿意为这艘船支付{$nex_bShip_price}星币。""",,
+#nex_bShipSelectedExtraInfo,Nex_BShip_ShipPicked,,"AddTextSmall ""武器和战机会被一同出售，而 如果 舰船上有玩家安装的S-mod则会退还 故事点 .""
+SetTextHighlightColors story h
+Highlight ""故事点"" ""如果""",,,
+#nex_bShipPostAccept,ContactPostAccept,$missionId == nex_bShip,"ShowPersonVisual
+AddCommodity credits $nex_bShip_price
+RemoveShip $nex_bShip_member
+Call $nex_bShip_ref2 confirm
+Call $nex_bShip_ref2 repSuccess
+Call $nex_bShip_ref2 addContacts",,,
+#END buy ship mission,,,,,,
 ,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+RC_Merge,PickGreeting,"$global.RC_Merge_returnHere score:1003
+$id == MeiDo",ShowPersonVisual,"""内置船插的改造上限是不是很令人讨厌？""
+
+""那只是低端工程师的能力上限，而我能提供没有上限的解决方案！""
+
+""只要提供安装有内置船插的相同舰船给我，我就可以通过分析完成超越上限的改造！""
+
+""但是，我所说的分析是破坏性的，改造成功概率也不是百分百，当然改造次数越多成功概率越高，需要舰长大人慎重考虑。""","RC_Merge_ShowPicker:我要进行内置船插改造
+cutCommLink:啥也不干",
+RC_Merge_ShowPicker,DialogOptionSelected,"$option == RC_Merge_ShowPicker
+",Call $global.RC_Merge_ref showPicker,这名科研人员将手中的 TriPad 递了过来。,,
+RC_Merge_ShipPicked,RC_Merge_ShipPicked,,"#SetShortcut contact_decline ""ESCAPE""
+Call $global.RC_Merge_ref showChance",,"RC_Merge_ShowPicker:重新选择
+RC_Merge_Merge:确认改造
+cutCommLinkNoText:取消并离开",
+RC_Merge_Merge,DialogOptionSelected,"$option == RC_Merge_Merge
+","ShowPersonVisual
+Call $global.RC_Merge_ref merge",在不算长久的等待之后，有结果了。,,
+RC_Merge_NotSame,RC_Merge_NotSame,,,"""您选择的舰船不是相同的舰船，请重新选择。""","RC_Merge_ShowPicker:重新选择
+cutCommLinkNoText:取消并离开",
+RC_Merge_Next,RC_Merge_Next,,,"""舰长大人，还要再试试吗？""","RC_Merge_ShowPicker:继续
+cutCommLink:啥也不干",

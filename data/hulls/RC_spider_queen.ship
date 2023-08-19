@@ -7,9 +7,9 @@
   "height": 239,
   "width": 272,
   "center": [136, 163],
-  "collisionRadius": 142,
+  "collisionRadius": 397.5,
   "shieldCenter": [0, -0],
-  "shieldRadius": 140.5,
+  "shieldRadius": 391,
   "viewOffset": 0,
   "builtInMods": [
     "RC_SpiderCore",

@@ -1,7 +1,7 @@
 {
   "variantId": "RC_lancer_variant",
   "hullId": "RC_lancer",
-  "displayName": "默认",
+  "displayName": "é»è®¤",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 0,
@@ -20,8 +20,8 @@
         "WS0003": "annihilatorpod",
         "WS0004": "lightsaber",
         "WS0005": "lightsaber",
-        "WS0006": "sabot",
-        "WS0007": "sabot"
+        "WS0006": "railgun_goodlook",
+        "WS0007": "railgun_goodlook"
       }
     }
   ],

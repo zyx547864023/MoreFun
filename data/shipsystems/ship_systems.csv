@@ -2,10 +2,10 @@ name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u 
 飞雷神,mine_strike_plus,,,,,,0.1,,3,0.33,0.25,,0.25,0,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 高级相位传送器,phaseteleporter_plus,,,,,,0.2,,,,0.5,0,0.5,0.25,,,,TRUE,,,,,,,,,graphics/icons/hullsys/displacer.png
 复合战术系统,combo,1,,,,,0.1,,,,0.25,5,0.25,0.25,,,,TRUE,,,,,,,,,graphics/icons/hullsys/high_energy_focus.png
-陨石牵引场,asteroid_arm,,,0.025,,,,,,,1.5,,0,1.5,TRUE,,,TRUE,TRUE,,,,,,,,graphics/icons/hullsys/fortress_shield.png
+陨石牵引场,asteroid_arm,,,0.025,,,,,,,1.5,,0,10,TRUE,,,TRUE,,,,,,,,,graphics/icons/hullsys/fortress_shield.png
 团结之力,trinity_force,,,,,,,,,,0.25,,0.25,10,,,,,,,,,,,,,graphics/icons/hullsys/fortress_shield.png
 折镜飞轮,boomerang,,,,,,,,,,0.25,2,0.25,5,,,,,,,,,,,,,graphics/icons/hullsys/fortress_shield.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
-质量加速力场,accelerating_field,,,,,,0.1,,10,0.2,0.25,,0.25,10,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
+质量加速力场,accelerating_field,,,,,,0.1,,5,0.2,0.25,,0.25,5,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 残骸吞噬者,hulk_eater,,,,,,0.3,,,,1,1,1,10,,,,TRUE,,,,,,,,,graphics/icons/hullsys/displacer.png
 侦察机操控,spy_on,,,,,,0.1,,2,2,0.25,,0.25,0,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
