@@ -6,6 +6,6 @@ name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u 
 团结之力,trinity_force,,,,,,,,,,0.25,,0.25,10,,,,,,,,,,,,,graphics/icons/hullsys/fortress_shield.png
 折镜飞轮,boomerang,,,,,,,,,,0.25,2,0.25,5,,,,,,,,,,,,,graphics/icons/hullsys/fortress_shield.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
-质量加速力场,accelerating_field,,,,,,0.1,,5,0.2,0.25,,0.25,5,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
+质量加速力场,accelerating_field,,,,,,0.1,,5,0.2,0.25,,1,5,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 残骸吞噬者,hulk_eater,,,,,,0.3,,,,1,1,1,10,,,,TRUE,,,,,,,,,graphics/icons/hullsys/displacer.png
 侦察机操控,spy_on,,,,,,0.1,,2,2,0.25,,0.25,0,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
