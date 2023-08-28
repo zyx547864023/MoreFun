@@ -19,5 +19,8 @@
 		"MeiDo":{
 			"MeiDo":"graphics/portraits/independent/56.png",
 		},
+		"mirror_shot":{
+			"mirror_shot":"graphics/missiles/mirror_shot.png",
+		},
 	}
 }
