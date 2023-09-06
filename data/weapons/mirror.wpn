@@ -1,29 +1,50 @@
 {
-	"id":"mirror",  # this id must match what's in the spreadsheet
-	"specClass":"projectile",
-	"everyFrameEffect":"real_combat.weapons.RC_MirrorOnHitEffect",
-	"type":"BALLISTIC",
-	"size":"LARGE",
-	"turretSprite":"graphics/weapons/plasma_cannon_turret_base.png",
-	"turretGlowSprite":"graphics/weapons/plasma_cannon_turret_glow.png",
-	"hardpointSprite":"graphics/weapons/plasma_cannon_hardpoint_base.png",
-	"hardpointGlowSprite":"graphics/weapons/plasma_cannon_hardpoint_glow.png",
-	"glowColor":[255,100,150,255],
-	"turretOffsets":[30, 0],
-	"turretAngleOffsets":[0],
-	"hardpointOffsets":[40, 0],
-	"hardpointAngleOffsets":[0],
-	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
-	"animationType":"GLOW_AND_FLASH",
-	"muzzleFlashSpec":{"length":-34.0,   # only used if animationType = MUZZLE_FLASH
-					   "spread":15.0,
-					   "particleSizeMin":15.0,
-					   "particleSizeRange":15.0,
-					   "particleDuration":0.15,
-					   "particleCount":30,
-					   "particleColor":[255,100,150,255]},
-	"interruptibleBurst":false,
-	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
-	"projectileSpecId":"mirror_shot",  # projectile that will be fired
-	"fireSoundTwo":"plasma_cannon_fire",
+  "id": "mirror",
+  "specClass": "projectile",
+  "projectileSpecId": "mirror_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "everyFrameEffect": "real_combat.weapons.RC_MirrorOnHitEffect",
+  "turretSprite": "graphics/weapons/pingpong_cannon_turret_base.png",
+  "turretGlowSprite": "graphics/weapons/pingpong_cannon_turret_glow.png",
+  "hardpointSprite": "graphics/weapons/pingpong_cannon_hardpiont_base.png",
+  "hardpointGlowSprite": "graphics/weapons/pingpong_cannon_hardpiont_glow.png",
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    -6,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    2,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 34,
+    "spread": 15,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "particleDuration": 0.15,
+    "particleCount": 30,
+    "particleColor": [
+	  255,
+	  255,
+	  255,
+      255
+    ]
+  },
+  "fireSoundTwo": "plasma_cannon_fire"
 }
