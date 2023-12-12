@@ -11,10 +11,11 @@
 	"combatMedium":{
 	},
 	"combatLarge":{
-
+		"RC_fuckass_variant":5,
 	},
 	"combatCapital":{
-
+		"RC_fuckass_variant":5,
+		"RC_spider_queen_variant":3,
 	},
 	
 	
@@ -125,6 +126,7 @@
 		"hyperion_meta_variant":1,
 		"hyperion_meta_variant_d":1,
 		"hyperion_meta_variant_n":1,
+		"RC_fuckass_variant":5,
 	},
 
 	"escortSmall":{

@@ -19,8 +19,8 @@
     "RC_spy_wing"
   ],
   "builtInWeapons": {
-    "WS 001": "heavymg",
-    "WS 002": "guardian"
+    "WS 001": "dualflak",
+    "WS 002": "swp_tripleflak"
   },
   "weaponSlots": [
     {

@@ -1,11 +1,15 @@
 {
 	"id":"MoreFun",
 	"name":"更有趣的战斗 [MoreFun]",
-    "utility": "true",
 	"author":"zouyx",
 	"version":"1.0.0",
-	"description":"使所有的舰船能量武器射程增加2倍，伤害随射程降低，实弹武器大型增加2倍，中型增加1.5，小型不变，伤害根据射程变化降低，导弹射程增加3倍.",
+	"description":"有趣的手操船和装备，一些增益和恐怖的AI",
 	"gameVersion":"0.96a-RC10",
 	"modPlugin":"real_combat.RCModPlugin",
+	"dependencies": [
+        {"id": "lw_lazylib", "name": "LazyLib"},
+        {"id": "MagicLib", "name": "MagicLib"},
+		{"id": "lunalib", "name": "LunaLib"},
+    ],
 	"jars":["jars/RealCombatHullmod.jar"]
 }

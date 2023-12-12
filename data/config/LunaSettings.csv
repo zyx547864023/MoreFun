@@ -3,5 +3,6 @@ MoreFun,isWarningEnabled,是否开启报警,Boolean,true,,战斗中敌人出现�
 MoreFun,isRangeDamageEnabled,是否开启射程决定伤害,Boolean,true,,使所有的舰船能量武器射程增加 1 倍 ，伤害随射程降低最高 2 倍，最低 0 倍；实弹武器大型增加 1.5 倍 、中型增加 1 倍 、小型增加 0.5 倍 ；伤害统一降低为 0.5 倍；导弹射程增加 1.5 倍,,,
 MoreFun,isEscortAccelerationEnabled,是否开启护航加速,Boolean,true,,有护卫或者驱逐护航的巡洋舰或主力舰增加 0.1 倍最大速度,,,
 MoreFun,isQEEnabled,是否开启QE指示器,Boolean,true,,显示QE指示器，防止舰长倒开舰船的时候不要搞错方向,,,
-MoreFun,isSmartAIEnabled,是否开启智能AI,Boolean,true,,智能撤退（战备不足没有其他命令的时候自动撤退）、智能开火（AI高爆和动能武器等待一起开火）、智能V排（被友军包围的时候安全自动V排）、智能导弹（节省导弹只对高幅能、比自己大、血量超过导弹伤害的目标进行发射）,,,
+MoreFun,isSmartAIEnabled,是否开启智能AI,Boolean,false,,（目前只对敌方舰船生效，开启时请开启射程决定伤害）智能撤退（战备不足没有其他命令的时候自动撤退）、智能开火（AI高爆和动能武器等待一起开火）、智能V排（被友军包围的时候安全自动V排）、智能导弹（节省导弹只对高幅能、比自己大、血量超过导弹伤害的目标进行发射）,,,
 MoreFun,isSightRadiusEnabled,是否模拟战斗视野全开,Boolean,true,,模拟对战中视野全开,,,
+MoreFun,isEasyMode,是否简单模式,Boolean,false,,不会被抢走船,,,
