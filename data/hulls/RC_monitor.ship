@@ -20,7 +20,7 @@
   ],
   "builtInWeapons": {
     "WS 001": "dualflak",
-    "WS 002": "swp_tripleflak"
+    "WS 002": "guardian"
   },
   "weaponSlots": [
     {
