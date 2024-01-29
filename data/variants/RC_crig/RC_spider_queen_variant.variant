@@ -1,17 +1,26 @@
 {
   "variantId": "RC_spider_queen_variant",
   "hullId": "RC_spider_queen",
-  "displayName": "默认",
+  "displayName": "é»è®¤",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 35,
+  "fluxVents": 15,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "expanded_deck_crew",
     "auxiliarythrusters"
   ],
-  "weaponGroups": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "camouflage_net",
+        "WS0006": "camouflage_net"
+      }
+    }
+  ],
   "modules": [
     {
       "WS0001": "RC_spider_queen_feet3_variant"

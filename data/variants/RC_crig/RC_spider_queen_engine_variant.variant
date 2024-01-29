@@ -1,10 +1,10 @@
 {
   "variantId": "RC_spider_queen_engine_variant",
   "hullId": "RC_spider_queen_engine",
-  "displayName": "默认",
+  "displayName": "é»è®¤",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 2,
+  "fluxVents": 13,
   "quality": 1,
   "permaMods": [],
   "hullMods": [],
@@ -23,12 +23,13 @@
         "WS0008": "vulcan",
         "WS0009": "heatseeker",
         "WS0010": "heatseeker",
-        "WS0012": "monster_ball_shooter_big",
-        "WS0013": "monster_ball_shooter_big",
-        "WS0014": "monster_ball_shooter",
-        "WS0015": "monster_ball_shooter",
-        "WS0016": "monster_ball_shooter",
-        "WS0017": "monster_ball_shooter"
+        "WS0011": "heatseeker",
+        "WS0012": "ovum",
+        "WS0013": "ovum",
+        "WS0014": "camouflage_net",
+        "WS0015": "camouflage_net",
+        "WS0016": "camouflage_net",
+        "WS0017": "camouflage_net"
       }
     }
   ],

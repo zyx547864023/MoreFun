@@ -19,18 +19,32 @@
 				    "style":"CUSTOM",
 					"styleSpec":{
 						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
-						"engineColor":[100,165,255,255],
+						"engineColor":[255,155,155,255],
 						"contrailDuration":1,
 						"contrailWidthMult":1,
 						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
 						"contrailMinSeg":5, # min segment length, in pixels
 						"contrailMaxSpeedMult":0.5f,
 						"contrailAngularVelocityMult":0.5f,
-						"contrailColor":[100,165,255,75],
+						"contrailColor":[255,155,155,75],
 						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
 					},
 				    "width":7.0,
 				    "length":40.0,
 				    "angle":180.0},
-				    ]
+				    ],
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+	"range":30,
+	"explosionSpec":{"duration":0.1f,
+					 "radius":60,
+					 "coreRadius":30, # full damage within core radius - also equal to proximity fuse range
+					 "collisionClass":PROJECTILE_FF,
+					 "collisionClassByFighter":PROJECTILE_FIGHTER,
+					 "particleSizeMin":3.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":100,
+					 "particleColor":[255,155,155,255],
+					 "sound":"explosion_flak"},
+	}
 }
