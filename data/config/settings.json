@@ -22,5 +22,11 @@
 		"mirror_shot":{
 			"mirror_shot":"graphics/missiles/mirror_shot.png",
 		},
+	"fx":{
+		 "arrow":"graphics/fx/KAM_RF.png",
+		 "chain1":"graphics/fx/BSF_chain1.png",
+		 "chain2":"graphics/fx/BSF_chain2.png",
+		 "BSF_paralithodes_harpoon_rocket":"graphics/missiles/BSF_paralithodes_harpoon_rocket.png",
+		},		
 	}
 }

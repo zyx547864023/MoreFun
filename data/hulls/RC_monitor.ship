@@ -19,7 +19,7 @@
     "RC_spy_wing"
   ],
   "builtInWeapons": {
-    "WS 001": "dualflak",
+    "WS 001": "reflective_beam",
     "WS 002": "guardian"
   },
   "weaponSlots": [

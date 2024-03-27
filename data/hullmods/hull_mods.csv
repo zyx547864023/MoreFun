@@ -5,3 +5,7 @@ name,id,tier,tech/manufacturer,rarity,uiTags,tags,base value,unlocked,hidden,hid
 模块核心,RC_TrinityForceCore,,海波龙神教,,特殊,"special,no_drop,no_sell,no_drop_salvage",,,TRUE,,0,0,0,0,real_combat.hullmods.RC_TrinityForceCore,作为模块的核心，速度和角速度与最慢的模块保持一致。,作为模块的核心，速度和角速度与最慢的模块保持一致。,graphics/hullmods/terminator_core.png
 模块组件,RC_TrinityForceModule,,海波龙神教,,特殊,"special,no_drop,no_sell,no_drop_salvage",,,TRUE,,0,0,0,0,real_combat.hullmods.RC_TrinityForceModule,海波龙核心的模块部分。,海波龙核心的模块部分。,graphics/hullmods/terminator_core.png
 幻想生物,RC_Fantasy,,幻想生物,,特殊,"special,no_drop,no_sell,no_drop_salvage",,,TRUE,,0,0,0,0,real_combat.hullmods.RC_Fantasy,幻想生物，会自动恢复装甲和血量。,幻想生物，会自动恢复装甲和血量。,graphics/hullmods/terminator_core.png
+,,,,,,,,,,,,,,,,,,
+#KAM_Red_forest,KAM_Red_forest,,幻想生物,,特殊,"defensive, merc",,,,,0,0,0,0,real_combat.hullmods.KAM_Red_forest,幻想生物，会自动恢复装甲和血量。,幻想生物，会自动恢复装甲和血量。,graphics/hullmods/terminator_core.png
+#KAM_Coniferous_forests,KAM_Coniferous_forests,,幻想生物,,特殊,"defensive, merc",,,,,0,0,0,0,real_combat.hullmods.KAM_Coniferous_forests,幻想生物，会自动恢复装甲和血量。,幻想生物，会自动恢复装甲和血量。,graphics/hullmods/terminator_core.png
+,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,58 @@
+{
+  "hullName": "Grass",
+  "hullId": "RC_grass",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/RC/RC_grass.png",
+  "style": "LOW_TECH",
+  "height": 24,
+  "width": 36,
+  "center": [18, 13],
+  "collisionRadius": 12,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 12,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [8, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [8, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, 8],
+      "length": 20.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-11, -8],
+      "length": 20.5,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    3, -11,
+    -4, -11,
+    -4, 11,
+    3, 11
+  ]
+}

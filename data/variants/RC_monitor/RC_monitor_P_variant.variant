@@ -1,0 +1,27 @@
+{
+  "variantId": "RC_monitor_P_variant",
+  "hullId": "RC_monitor_P",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "flak",
+        "WS 002": "flak",
+        "WS0001": "dualflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}
