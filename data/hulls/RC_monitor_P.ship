@@ -15,8 +15,8 @@
     "fluxshunt"
   ],
   "builtInWings": [
-    "RC_grass_wing",
-    "RC_grass_wing"
+    "RC_bloody_wing",
+    "RC_bloody_wing"
   ],
   "builtInWeapons": {
     "WS 001": "flak",

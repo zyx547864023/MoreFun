@@ -1,7 +1,7 @@
 {
   "hullName": "短机械臂模块",
   "hullId": "RC_spider_queen_feet6",
-  "hullSize": "CRUISER",
+  "hullSize": "DESTROYER",
   "spriteName": "graphics/ships/RC/RC_spider_queen_feet6.png",
   "style": "LOW_TECH",
   "height": 119,

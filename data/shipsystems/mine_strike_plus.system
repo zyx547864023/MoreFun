@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"MINE_STRIKE",
 	
-	"statsScript":"real_combat.combat.MineStrikePlusStats",
+	"statsScript":"real_combat.shipsystems.scripts.MineStrikePlusStats",
 
 	"canUseWhileRightClickSystemOn":true,
 

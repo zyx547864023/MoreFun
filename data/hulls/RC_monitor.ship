@@ -15,11 +15,11 @@
     "fluxshunt"
   ],
   "builtInWings": [
-    "RC_spy_wing",
-    "RC_spy_wing"
+    "RC_grass_wing",
+    "RC_grass_wing"
   ],
   "builtInWeapons": {
-    "WS 001": "reflective_beam",
+    "WS 001": "flak",
     "WS 002": "guardian"
   },
   "weaponSlots": [
