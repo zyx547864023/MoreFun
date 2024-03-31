@@ -14,9 +14,6 @@
   "builtInMods": [
     "high_maintenance"
   ],
-  "builtInWings": [
-    "RC_bloody_wing"
-  ],
   "builtInWeapons": {
     "WS0005": "dragon_head",
     "WS0006": "dragon_head"
