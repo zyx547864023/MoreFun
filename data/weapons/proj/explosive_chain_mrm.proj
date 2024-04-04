@@ -1,0 +1,51 @@
+{
+	"id":"explosive_chain_mrm",
+	"specClass":"missile",	
+	"onFireEffect":"real_combat.weapons.RC_ExplosiveChainPlugin",
+	"onHitEffect":"real_combat.weapons.RC_ExplosiveChainPlugin",
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/missile_harpoon.png",
+	"size":[10,22],	
+	"center":[5,12],
+	"collisionRadius":16,
+	"collisionClass":"FIGHTER",
+	"explosionColor":[100,100,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":300,
+				  "acc":5500,
+				  "dec":3500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-13, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,155,155,255],
+						"contrailDuration":1,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[255,155,155,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":7.0,
+				    "length":40.0,
+				    "angle":180.0},
+				    ],
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+	"range":30,
+	"explosionSpec":{"duration":0.1f,
+					 "radius":60,
+					 "coreRadius":30, # full damage within core radius - also equal to proximity fuse range
+					 "collisionClass":PROJECTILE_FF,
+					 "collisionClassByFighter":PROJECTILE_FIGHTER,
+					 "particleSizeMin":3.0,
+					 "particleSizeRange":3.0,
+					 "particleDuration":1,
+					 "particleCount":100,
+					 "particleColor":[255,155,155,255],
+					 "sound":"explosion_flak"},
+	}
+}

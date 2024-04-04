@@ -1,7 +1,7 @@
 {
   "variantId": "RC_spider_queen_engine_variant",
   "hullId": "RC_spider_queen_engine",
-  "displayName": "é»è®¤",
+  "displayName": "Ã©Â»ÂÃ¨Â®Â¤",
   "goalVariant": false,
   "fluxCapacitors": 0,
   "fluxVents": 13,
@@ -14,22 +14,22 @@
       "mode": "LINKED",
       "weapons": {
         "WS0001": "lightdualmg",
-        "WS0002": "heatseeker",
+        "WS0002": "camouflage_net",
         "WS0003": "lightdualmg",
-        "WS0004": "heatseeker",
+        "WS0004": "camouflage_net",
         "WS0005": "vulcan",
         "WS0006": "vulcan",
         "WS0007": "vulcan",
         "WS0008": "vulcan",
-        "WS0009": "heatseeker",
-        "WS0010": "heatseeker",
-        "WS0011": "heatseeker",
+        "WS0009": "camouflage_net",
+        "WS0010": "camouflage_net",
+        "WS0011": "camouflage_net",
         "WS0012": "ovum",
         "WS0013": "ovum",
-        "WS0014": "camouflage_net",
-        "WS0015": "camouflage_net",
-        "WS0016": "camouflage_net",
-        "WS0017": "camouflage_net"
+        "WS0014": "explosive_chain",
+        "WS0015": "explosive_chain",
+        "WS0016": "explosive_chain",
+        "WS0017": "explosive_chain"
       }
     }
   ],
