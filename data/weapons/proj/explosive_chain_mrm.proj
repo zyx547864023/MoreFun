@@ -5,8 +5,8 @@
 	"onHitEffect":"real_combat.weapons.RC_ExplosiveChainPlugin",
 	"missileType":"MISSILE",
 	"sprite":"graphics/missiles/chain_head.png",
-	"size":[13,20],	
-	"center":[5,12],
+	"size":[26,40],	
+	"center":[13,20],
 	"collisionRadius":16,
 	"collisionClass":"FIGHTER",
 	"explosionColor":[100,100,255,255],  # purely visual, will get a white additively blended core on top of this color
