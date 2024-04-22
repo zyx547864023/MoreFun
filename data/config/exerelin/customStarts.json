@@ -1,0 +1,12 @@
+{
+	"starts":[
+		{
+			"id":"RC_SuperStart",
+			"name":"原型海波龙",
+			"difficulty":"简单",
+			"desc":"你发现了一艘漂流在深空之中秘密实验基地内的超级护卫舰,}为了探寻其隐藏的秘密,}你毫不犹豫的开着它朝着飞船上原本设定的航向前进.\n\n带着它去寻找隐藏任务吧.",
+			"className":"real_combat.campaign.customstart.RC_SuperStart",
+			"factionId":"player",
+		},
+	],
+}

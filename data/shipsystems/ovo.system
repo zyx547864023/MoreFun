@@ -1,0 +1,16 @@
+{
+	"id":"ovo",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"real_combat.shipsystems.scripts.ai.RC_ComboSystemAI",
+	"statsScript":"real_combat.shipsystems.scripts.RC_OVOSystem",
+
+	"useSound":"system_plasma_burn",
+	"loopSound":"system_plasma_burn_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+
+	}
+}
