@@ -8,5 +8,6 @@ name,id,tier,tech/manufacturer,rarity,uiTags,tags,base value,unlocked,hidden,hid
 ,,,,,,,,,,,,,,,,,,
 #KAM_Red_forest,KAM_Red_forest,,幻想生物,,特殊,"defensive, merc",,,,,0,0,0,0,real_combat.hullmods.KAM_Red_forest,幻想生物，会自动恢复装甲和血量。,幻想生物，会自动恢复装甲和血量。,graphics/hullmods/terminator_core.png
 #KAM_Coniferous_forests,KAM_Coniferous_forests,,幻想生物,,特殊,"defensive, merc",,,,,0,0,0,0,real_combat.hullmods.KAM_Coniferous_forests,幻想生物，会自动恢复装甲和血量。,幻想生物，会自动恢复装甲和血量。,graphics/hullmods/terminator_core.png
+#KAM_Enemies_of_Hell,KAM_Enemies_of_Hell,,幻想生物,,特殊,"defensive, merc",,,,,0,0,0,0,real_combat.hullmods.KAM_Enemies_of_Hell,幻想生物，会自动恢复装甲和血量。,幻想生物，会自动恢复装甲和血量。,graphics/hullmods/terminator_core.png
 通用运维,RC_OPEX,,普通,,特殊,"special,no_drop,no_sell,no_drop_salvage",8000,TRUE,,,5,10,15,25,real_combat.hullmods.RC_OPEX,相同的装配越多峰值时间越高，战备降低速度越低，飞机整备速率越高。,相同的装配越多峰值时间越高，战备降低速度越低，飞机整备速率越高。,graphics/hullmods/CKEM.jpg
 寒流,RC_HL,,普通,,特殊,"special,no_drop,no_sell,no_drop_salvage",8000,TRUE,,,5,10,15,25,real_combat.hullmods.RC_HL,舰船本体受击后会以幅能耗散速度排放受击伤害量的幅能。,舰船本体受击后会以幅能耗散速度排放受击伤害量的幅能。,graphics/hullmods/RC_HL.jpg
